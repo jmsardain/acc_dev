@@ -16,12 +16,12 @@ Use the setup.sh file in ./ to setup xilinx and to examine if the device is read
 source setup.sh
 ```
 
-## Compile the differnt code
+## Compile the different code
 ```
 export XCL_EMULATION_MODE=sw_emu
 cd sw_emu/
 source compile_emul.sh  
 source compile_host.sh
 source compile_kernel.sh
-./host_openCL --hitFile ../txtfiles/hits.txt --partFile ../txtfiles/particles.txt
+./host_openCL --data ../txtfiles/merge.txt
 ```
