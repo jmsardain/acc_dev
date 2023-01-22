@@ -46,15 +46,24 @@ The merge file contains the information of the single muon in each event.
 In fact, for one event, barcode, charge, pt and d0 shouldn't change.
 However, a muon leaves multiple hits that are located in different places in the detector (layer, r, x, y, z).
 The host code reads the data and constructs an array of blocks of 9 elements.
-The 9*i   th element represents the number of hits
-The 9*i+1 th element represents the layer where a hit exists
-The 9*i+2 th element represents the position in r of the hit
-The 9*i+3 th element represents the position in x of the hit
-The 9*i+4 th element represents the position in y of the hit
-The 9*i+5 th element represents the position in zs of the hit
-The 9*i+6 th element represents the charge of the muon
-The 9*i+7 th element represents the transverse momentum (pT) of the muon
-The 9*i+8 th element represents the d0 of the muon
+
+The 9i   th element represents the number of hits
+
+The 9i+1 th element represents the layer where a hit exists
+
+The 9i+2 th element represents the position in r of the hit
+
+The 9i+3 th element represents the position in x of the hit
+
+The 9i+4 th element represents the position in y of the hit
+
+The 9i+5 th element represents the position in zs of the hit
+
+The 9i+6 th element represents the charge of the muon
+
+The 9i+7 th element represents the transverse momentum (pT) of the muon
+
+The 9i+8 th element represents the d0 of the muon
 
 The kernel code will then compare the different hits with one another (e.g. the first block of 9 elements with the second block of 9 elements).
 The events that satisfy the condition below should be kept in the output array (output of the kernel) that will be analyzed in the function HoughTransform:
