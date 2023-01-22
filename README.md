@@ -41,6 +41,14 @@ To run the code:
 ./host_openCL --data ../txtfiles/merge.txt
 ```
 
+A code that does not use the kernel (pure C++ code) exists and it lives in host/. To run it you need to:
+
+```
+cd Hough/
+make
+./dataProcessor --data txtfiles/merge.txt 
+```
+
 ## More details about the code in the kernel
 The merge file contains the information of the single muon in each event.
 In fact, for one event, barcode, charge, pt and d0 shouldn't change.
