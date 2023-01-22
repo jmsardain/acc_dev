@@ -3,6 +3,12 @@
 This code works and lives on eepp-ml2.physics.arizona.edu
 If you are not using UArizona internet, you can use the UA VPN.
 
+N.B.: Until now, only the selection of the events is running on the kernel.
+
+The pure C++ code calls the SelectEvents (with the letter s at the end) that does the selection and the doublet Hough Transform.
+
+The code that utilizes the kernel, prepares the data, sends them to the kernel where the selection is made, and the output of the kernel is fed to a function called HoughTransform that only does the doublet Hough transform method.
+
 ## Data
 The data to run on is in the txtfiles/ repository. hits and truth (particles) file exist for single muons.
 
