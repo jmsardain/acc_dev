@@ -1,86 +1,63 @@
-# Code to run doublet Hough transform on an accelerator card
+# Instructions to run HTTSim in athena
 
-This code works and lives on eepp-ml2.physics.arizona.edu
-If you are not using UArizona internet, you can use the UA VPN.
-
-N.B.: Until now, only the selection of the events is running on the kernel.
-
-The pure C++ code calls the SelectEvents (with the letter s at the end) that does the selection and the doublet Hough Transform.
-
-The code that utilizes the kernel, prepares the data, sends them to the kernel where the selection is made, and the output of the kernel is fed to a function called HoughTransform that only does the doublet Hough transform method.
-
-## Data
-The data to run on is in the txtfiles/ repository. hits and truth (particles) file exist for single muons.
-
+First setup:
 ```
-hits file
-event, layer, r, x, y, z
-
-particles file
-event, barcode, charge, pt, d0
-```
-
-A merged file is created with the (very) simple code txtfiles/mergedf.py
-```
-python mergedf.py
+mkdir HTTSim
+cd HTTSim
+mkdir athena
+cd athena
+setupATLAS # alternatively, source ${ATLAS_LOCAL_ROOT_BASE}/user/atlasLocalSetup.sh
+lsetup git
+git init
+git sparse-checkout set Projects/TrigHTT/ Trigger/TrigHTT/
+git remote add origin ssh://git@gitlab.cern.ch:7999/atlas-tdaq-ph2upgrades/atlas-tdaq-htt/tdaq-htt-offline/athena.git
+git fetch
+git checkout 21.9
+cd .. # You should now be back in the HTTSim directory
+mkdir build workspace run
+cd build
+asetup 21.9.16,Athena,here
+cmake ../athena/Projects/TrigHTT
+make -j 32
+source build/x86_64-*-gcc62-opt/setup.sh
 ```
 
-## Setup xilinx
-Use the setup.sh file in ./ to setup xilinx and to examine if the device is ready
+Once everything is setup, you would only need to do (to setup and to compile):
+
 ```
-source setup.sh
+setupATLAS
+cd build
+asetup 21.9.16,Athena,here
+cmake ../athena/Projects/TrigHTT
+make
+cd ../
+source build/x86_64-*-gcc62-opt/setup.sh
 ```
 
-## Compile and run the code
-The main function for the host is in host/host.cxx and it calls the helpers in include/, namely HoughHelper.cxx and plotHelper.cxx
-The main function for the kernel is in  kernel/kernel.cxx
-```
-export XCL_EMULATION_MODE=sw_emu
-cd sw_emu/
-source compile_emul.sh    # compiles the emulation
-source compile_host.sh    # compiles the host code
-source compile_kernel.sh  # compiles the kernel code
-```
 
 To run the code:
-```
-./host_openCL --data ../txtfiles/merge.txt
-```
-
-A code that does not use the kernel (pure C++ code) exists and it lives in host/. To run it you need to:
 
 ```
-cd Hough/
-make
-./dataProcessor --data txtfiles/merge.txt 
+# Using the DV+jets sample - filtered
+## files were given by E. Cheu.
+## I also have a copy in /eos/user/j/jzahredd/HTTSim/data/, ping me if you want access
+InFile="file1,file2"
+
+NAME="test"
+echo $HOSTNAME
+SECONDS=0
+mkdir rundir-doublet-$NAME
+cd rundir-doublet-$NAME
+HTTLogicalHitsToAlg_tf.py \
+    --maxEvents 100 \ ## to run only 100 events
+    --InFileName $InFile \
+    --mapTag 'EF_TaskForce_dev22' \
+    --algoTag hough \
+    --hough True \
+    --lrt True \
+    --lrt_use_basicHitFilter True \
+    --OutFileName doublet-$NAME.root \
+    --sampleType LLPs \
+    --lrt_use_doubletHT True
+cd ..
 ```
-
-## More details about the code in the kernel
-The merge file contains the information of the single muon in each event.
-In fact, for one event, barcode, charge, pt and d0 shouldn't change.
-However, a muon leaves multiple hits that are located in different places in the detector (layer, r, x, y, z).
-The host code reads the data and constructs an array of blocks of 9 elements.
-
-The 9i   th element represents the number of hits
-
-The 9i+1 th element represents the layer where a hit exists
-
-The 9i+2 th element represents the position in r of the hit
-
-The 9i+3 th element represents the position in x of the hit
-
-The 9i+4 th element represents the position in y of the hit
-
-The 9i+5 th element represents the position in zs of the hit
-
-The 9i+6 th element represents the charge of the muon
-
-The 9i+7 th element represents the transverse momentum (pT) of the muon
-
-The 9i+8 th element represents the d0 of the muon
-
-The kernel code will then compare the different hits with one another (e.g. the first block of 9 elements with the second block of 9 elements).
-The events that satisfy the condition below should be kept in the output array (output of the kernel) that will be analyzed in the function HoughTransform:
-
-First condition: 2 hits belonging to the same particle cannot be on the same layer
-Second condition: it uses the radius difference defined as radius of hit j - radius of hit i. radius difference should be between 200 and 600. 
