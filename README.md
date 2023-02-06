@@ -1,3 +1,5 @@
+Ref: https://edms.cern.ch/ui/file/2591106/2/EF_Tracking_TF_Report___Commodity_Approach-v07.pdf 
+
 # Code to run doublet Hough transform on an accelerator card
 
 This code works and lives on eepp-ml2.physics.arizona.edu
