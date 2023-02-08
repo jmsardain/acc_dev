@@ -1,0 +1,27 @@
+<lcgdict>
+
+  <!--  dictionaries: -->
+  
+  <!-- HTT EDM -->
+  <!--  id generated with uuidgen | tr "[:lower:]"  "[:upper:]"  -->
+
+
+  <!--   HTTTrackTest -->  
+  <class name="xAOD::HTTTrackTest_v1" />
+  <class name="xAOD::HTTTrackTestContainer_v1"
+         id="070F54C6-320D-4F22-BD42-C87C6AF99C38" />
+  <class name="xAOD::HTTTrackTestAuxContainer_v1"
+         id="CE2C5182-53DD-46E0-9DFA-61C214A8FCE5" />  
+    
+ 
+  <!-- Suppress the unwanted classes found by ROOT 6. -->
+  <!-- Hopefully we can remove these extra lines at one point... -->
+  <exclusion>
+    <class name="SG::IConstAuxStore" />
+    <class name="DataLink<SG::IConstAuxStore>" />
+    <class name="DataVector<xAOD::IParticle>" /> 
+    <class pattern="ElementLink<DataVector<xAOD::IParticle*" />  
+  </exclusion>
+
+</lcgdict>
+
