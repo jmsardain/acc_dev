@@ -1,0 +1,97 @@
+#Includes
+********************************************************************************
+Decoders from HTT simulated objects to hardware-readable fragments (words) and vice-versa.
+Also provides test-vector functionality. See below
+
+The test runs once over pre-filled HTTEventInfo, HTTTrack, HTTCluster, and HTTRawHit objects.
+Many components are still hardcoded (not available yet in HTTSim).
+Not tested on any HTTSim file (not available yet either).
+Produces full words in the right format (see below).
+Reads words and give back objects.
+
+Uses structure and bit-by-bit format defined by Elliot and included in:
+TrigHTTByteStream/TrigHTTTPByteStreamStructure.h
+
+The test runs as:
+
+ctest -R testHTTByteStreamConversion
+
+
+log file and results stored in
+Trigger/TrigHTT/TrigHTTByteStream/unitTestRun/
+
+
+
+
+## TrigHTTByteStreamTool.cxx (.h)
+--------------------------------------------------------------------------------
+Includes converters from HTT objects to fragments (words) and vice-versa
+
+Currently:
+	* 6/6 words of Event Header (word<-> event info)
+	* 3/3 words of Event Footer (word <-> event info)
+	* 2/2 words of Module Header (word <-> event info)
+	* 1/1 word of Raw Strip Cluster (HCC) Header (word <-> event info)
+	* 1/1 word of Raw Strip Cluster (HCC) Module data (word <-> raw hit)
+	* 1/1 word of Pixel Cluster Module data (word <-> cluster module)
+	* 1/1 word of Pixel Cluster Footer (word <-> event info)
+	* 1/1 word of Strip Cluster Module data (word <-> cluster module)
+	* 1/1 word of Strip Cluster Footer (word <-> event info)
+	* 4/4 words of Track Block data (word <-> track block)
+	* 1/1 word of Track Pixel Cluster (word <-> cluster)
+	* 1/1 word of Strip Pixel Cluster (word <-> cluster)
+
+
+## HTTByteStreamDecoderAlg.cxx (.h)
+--------------------------------------------------------------------------------
+Here is where we perform the regular test (fake decoding) and test-vector production (dummy, that is, not from HTTSim; and regular, from simulation -not operative yet).
+
+declareProperty("TvType",             m_tvType=-1, "flag to select the type of test-vector: -1=all, 0=raw, 1=cluster, 2=track, 3= extensions ");
+declareProperty("DoTestVectors",      m_doTestVectors=true, "flag to enable the test vectors");
+declareProperty("DoDummyTestVectors", m_doDummyTestVectors=true, "flag to enable the dummy test vectors");
+declareProperty("DoFakeDecoding",     m_doFakeDecoding=false, "flag to enable the fake decoding");
+declareProperty("HTTTrackKey",        m_trackKey="HTTTracks", "SG key of the HTTTrackContainer");
+
+### Process for Test vector production:
+
+	* Decode RAW: TP_IN
+	* Decode CLUSTER: PRM_IN
+	* Decode TRACK: PRM_OUT (1st stage) -> it will include stage 2 tracks in the future (SSTP out)
+	* Decode PRMEXT: PRM_EXT (extensions for the PRM)
+
+### Data structure
+
+We have generators for each block of the data structure
+
+#### Raw data (TP_in)
+
+Event Header
+Module Header #1
+Module Data #1
+Module Header #2
+Module Data #2
+Event Footer
+
+For Strips, Module Data will be one block of HCC Header followed by HCC Cluster.
+
+#### Cluster data (PRM_in)
+
+Event Header
+Module Header #1
+Module Data #1
+Module Header #2
+Module Data #2
+Event Footer
+
+For Strip Cluster, Module Data will be one block of Strip Cluster, followed by Strip Cluster Footer.
+For Pixel Cluster, Module Data will be one block of Pixel Cluster, followed by Pixel Cluster Footer.
+
+#### Track data (PRM_out)
+
+Event Header
+Track Block #1
+Track Block #3
+Track Block #3
+Event footer
+
+Each Track Block is structured as 4 words of track, pixel and strip clusters and zero padding when needed.

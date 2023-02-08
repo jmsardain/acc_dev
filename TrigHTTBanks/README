@@ -1,0 +1,39 @@
+## TrigHTTBanks package
+
+This package contains all files that manage constant banks. This includes fit constants and pattern banks. Algorithms for generating banks are located in TrigHTTBankGen.
+All bank classes can be retrieved using ITrigHTTBankSvc, except for HTTIndexPatt, which are AthAlgTools. File and other configuration can be set using the bank tags.
+
+#### Bank Service:
+
+1. ITrigHTTBankSvc.h: Interface declaration for the bank service.
+2. TrigHTTBankSvc.h: Implementation of the bank service.
+
+#### Sector Files:
+
+1. HTTFitConstantBank.h: This class stores the fit constants for all sectors, and exposes methods to perform linear fits and inverse fits.
+2. HTTSectorSlice.h: This class manages bitvectors that describe what range of track parameters go through each sector (a slice). Primarily used by track inversion to reverse-lookup sectors given a set of track parameters.
+3. HTTSectorBank.h: This class stores the sector definitions, the list of 8 or 13 modules that define a sector. It also provides methods to reverse-lookup a sector given a list of modules.
+
+#### Pattern Bank Files:
+
+1. HTTPatternBank.h: A class that stores a full pattern bank in a format highly optimized for pattern matching simulation (ccache format).
+2. HTTBankMetadata.h: A class that manages pattern bank metadata.
+3. HTTIndexPatt\*.h: Tools that read and write pattern banks from ROOT files, stored in the Indexed format. It reads sectors one at a time, returning a vector of patterns. It writes patterns by letting the user add patterns one-by-one, flushing to file intermittently.
+    1. Base: Abstract base class for reader and writer that inherits AthAlgTool
+    2. Reader: Reader class, including reading legacy (FTK) banks
+    4. ReaderI: Reader interface
+    3. Writer: Writer class
+    5. Convert: Algorithm to converts legacy banks to HTT banks
+    6. Merge: Algorithm to merge index banks together into a single file
+4. HTTCCachePattBankIO.h: Class that reads and writes pattern banks from ROOT files, stored in the CCache format. It reads the whole bank at once, returning an HTTPatternBank. It writes an entire bank at once, taking an HTTPatternBank as an argument.
+
+#### Executables/Transforms:
+
+1. HTTIndexPattConvert\_tf.py: Converts index pattern banks in the legacy (FTKSim) format to the new (HTTSim) format. TODO
+2. HTTIndexPattMerge\_tf.py: Merges index pattern banks.
+
+
+#### Configuration:
+
+1. HTTBankConfig.py: Functions for creating the bank service and applying the bank tag to HTTBanks objects.
+2. HTTBankTags.py: JSON-like file that lists tags for configuring the HTTBanks objects and algorithms.

@@ -1,0 +1,17 @@
+ToolSvc.HTTPatternMatchTool.max_misses = 1;
+
+HTTEventSelectionSvc.regionID = 0;
+HTTEventSelectionSvc.regions =  "../../TrigHTTConfig/htt_configuration/map_files/slices_v01_Jan21.txt";
+
+TrigHTTMappingSvc.mappingType = "FILE";
+TrigHTTMappingSvc.pmap = "../../TrigHTTMaps/htt_configuration/map_files/step3_01eta03_03phi05.pmap";
+TrigHTTMappingSvc.rmap = "../../TrigHTTMaps/htt_configuration/map_files/rmaps/eta0103phi0305_ATLAS-P2-ITK-23-00-01.rmap";
+TrigHTTMappingSvc.ssmap = "../../TrigHTTMaps/htt_configuration/ss_files/HTT_Test.ss";
+TrigHTTMappingSvc.modulemap = "../../TrigHTTMaps/htt_configuration/map_files/ITk.global-to-local.moduleidmap";
+TrigHTTMappingSvc.subrmap = "../../TrigHTTMaps/htt_configuration/zslicemaps/ATLAS-P2-ITK-23-00-01/eta0103phi0305_KeyLayer-strip_barrel_2_extra03_trim_0_001_NSlices-6.rmap";
+TrigHTTMappingSvc.connection = "../../TrigHTTMaps/htt_configuration/map_files/connectionFile_geo22.patt";
+TrigHTTMappingSvc.NNmap = "../../TrigHTTMaps/htt_configuration/map_files/NN_DNN_HTTfakes_SingleP_Truth_v2.json";
+TrigHTTMappingSvc.OutputLevel = 2;
+
+TrigHTTBankSvc.BankType = "FILE";
+TrigHTTBankSvc.patternBank = "root://eosuser.cern.ch//eos/atlas/atlascerngroupdisk/det-htt/HTTsim/ATLAS-P2-ITK-17-06-00/21.9.2/eta0103phi0305/PatternBanks/test/ccache.one_pattern.root";

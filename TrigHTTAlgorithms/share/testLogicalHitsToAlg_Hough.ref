@@ -1,0 +1,448 @@
+Running on region 0
+Py:Athena            INFO including file "AthenaCommon/Preparation.py"
+Py:Athena            INFO including file "AthenaCommon/Bootstrap.py"
+Py:Athena            INFO including file "AthenaCommon/Atlas.UnixStandardJob.py"
+Py:Athena            INFO executing ROOT6Setup
+Py:Athena            INFO including file "AthenaCommon/Execution.py"
+Py:Athena            INFO including file "runargs.HTTLogicalHitsToAlg.py"
+Py:Athena            INFO including file "TrigHTTAlgorithms/skeleton.HTTLogicalHitsToAlg.py"
+('Final pars: ', {'algoTag': 'hough', 'withPU': False, 'sampleType': 'singleMuons', 'bankTag': 'EF_TaskForce_dev22'})
+Py:Athena            INFO including file "AthenaCommon/runbatch.py"
+ApplicationMgr       INFO Application Manager Configured successfully
+Py:Athena            INFO including file "AthenaCommon/Preparation.py"
+Py:Athena            INFO including file "AthenaCommon/Bootstrap.py"
+Py:Athena            INFO including file "AthenaCommon/Atlas.UnixStandardJob.py"
+Py:Athena            INFO executing ROOT6Setup
+Py:Athena            INFO including file "AthenaCommon/Execution.py"
+ApplicationMgr       INFO Application Manager Configured successfully
+Py:Athena            INFO including file "AthenaCommon/runbatch.py"
+[38;5;153mStatusCodeSvc                    INFO initialize[m
+[38;5;153mAthDictLoaderSvc                 INFO in initialize...[m
+[38;5;153mAthDictLoaderSvc                 INFO acquired Dso-registry[m
+[38;5;153mChronoStatSvc                    INFO  Number of skipped events for MemStat-1[m
+[38;5;153mCoreDumpSvc                      INFO install f-a-t-a-l handler... (flag = -1)[m
+[38;5;153mCoreDumpSvc                      INFO Handling signals: 11(Segmentation fault) 7(Bus error) 4(Illegal instruction) 8(Floating point exception) [m
+[38;5;153mAthMasterSeq                     INFO Member list: AthSequencer/AthAlgSeq, AthSequencer/AthOutSeq, AthSequencer/AthRegSeq[m
+[38;5;153mAthAlgSeq                        INFO Member list: HTTLogicalHitsProcessAlg[m
+[38;5;153mHTTLogicalHitsProcessAlg         INFO Tag config:[m
+[38;5;153mHTTLogicalHitsProcessAlg         INFO 	map: EF_TaskForce_dev22[m
+[38;5;153mHTTLogicalHitsProcessAlg         INFO 	bank: EF_TaskForce_dev22[m
+[38;5;153mHTTLogicalHitsProcessAlg         INFO 	algo: hough[m
+[38;5;153mToolSvc.HTTReadInput             INFO HTTInputHeaderTool::initialize()[m
+[38;5;153mToolSvc.HTTReadInput             INFO Getting branch and set EventHeader[m
+[38;5;153mToolSvc.HTTReadInput             INFO End of Tool initialize[m
+[38;5;153mHTTEventSelectionSvc             INFO Creating the slices object[m
+[38;5;153mHTTEventSelectionSvc             INFO HTTEventSelectionSvc::initialize(): regionID = 0, min = {phi:0.3 q/pt:-0.001 d0:-2 z0:-150 eta:0.1}, max = {phi:0.5 q/pt:0.001 d0:2 z0:150 eta:0.3}, sampleType = singleMuons, withPU = 0[m
+[38;5;153mHTTPlaneMap_1st                  INFO Using 8 logical layers and 9 coordinates[m
+[38;5;153mHTTPlaneMap_2nd                  INFO Using 13 logical layers and 18 coordinates[m
+[38;5;153mToolSvc.HTT_RawToLogicalHit...   INFO SaveOptional= 'SaveOptional':2[m
+[38;5;153mToolSvc.HTTClusteringTool        INFO HTTClusteringTool::initialize()[m
+[38;5;153mToolSvc.HTTRoadUnionTool         INFO Using 6 tools[m
+[38;5;153mToolSvc.HTTRoadUnionTool.Ho...   INFO Image size: 228 x 220[m
+[38;5;153mToolSvc.HTTRoadUnionTool.Ho...   INFO Convolution size: 0 x 0[m
+[38;5;153mToolSvc.HTTRoadUnionTool.Ho...   INFO Convolution: [][m
+[38;5;153mToolSvc.HTTRoadUnionTool.Ho...   INFO Hit Extend: [2, 1, 0, 0, 0, 0, 0, 0][m
+[38;5;153mToolSvc.HTTRoadUnionTool.Ho...   INFO Image size: 228 x 220[m
+[38;5;153mToolSvc.HTTRoadUnionTool.Ho...   INFO Convolution size: 0 x 0[m
+[38;5;153mToolSvc.HTTRoadUnionTool.Ho...   INFO Convolution: [][m
+[38;5;153mToolSvc.HTTRoadUnionTool.Ho...   INFO Hit Extend: [2, 1, 0, 0, 0, 0, 0, 0][m
+[38;5;153mToolSvc.HTTRoadUnionTool.Ho...   INFO Image size: 228 x 220[m
+[38;5;153mToolSvc.HTTRoadUnionTool.Ho...   INFO Convolution size: 0 x 0[m
+[38;5;153mToolSvc.HTTRoadUnionTool.Ho...   INFO Convolution: [][m
+[38;5;153mToolSvc.HTTRoadUnionTool.Ho...   INFO Hit Extend: [2, 1, 0, 0, 0, 0, 0, 0][m
+[38;5;153mToolSvc.HTTRoadUnionTool.Ho...   INFO Image size: 228 x 220[m
+[38;5;153mToolSvc.HTTRoadUnionTool.Ho...   INFO Convolution size: 0 x 0[m
+[38;5;153mToolSvc.HTTRoadUnionTool.Ho...   INFO Convolution: [][m
+[38;5;153mToolSvc.HTTRoadUnionTool.Ho...   INFO Hit Extend: [2, 1, 0, 0, 0, 0, 0, 0][m
+[38;5;153mToolSvc.HTTRoadUnionTool.Ho...   INFO Image size: 228 x 220[m
+[38;5;153mToolSvc.HTTRoadUnionTool.Ho...   INFO Convolution size: 0 x 0[m
+[38;5;153mToolSvc.HTTRoadUnionTool.Ho...   INFO Convolution: [][m
+[38;5;153mToolSvc.HTTRoadUnionTool.Ho...   INFO Hit Extend: [2, 1, 0, 0, 0, 0, 0, 0][m
+[38;5;153mToolSvc.HTTRoadUnionTool.Ho...   INFO Image size: 228 x 220[m
+[38;5;153mToolSvc.HTTRoadUnionTool.Ho...   INFO Convolution size: 0 x 0[m
+[38;5;153mToolSvc.HTTRoadUnionTool.Ho...   INFO Convolution: [][m
+[38;5;153mToolSvc.HTTRoadUnionTool.Ho...   INFO Hit Extend: [2, 1, 0, 0, 0, 0, 0, 0][m
+[38;5;153mToolSvc.HTTOverlapRemovalTo...   INFO HTTOverlapRemovalTool::initialize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool      INFO HTTMonitorUnionTool::initialize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTHitMonitorTool::initialize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTClusterMonitorTool::initialize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTRoadMonitorTool::initialize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTTrackMonitorTool::initialize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTEventMonitorTool::initialize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool      INFO Running with 6 monitor tool(s).[m
+[38;5;153mToolSvc.HTTDataFlowTool          INFO HTTDataFlowTool::initialize()[m
+[38;5;153mToolSvc.HTTWriteOutput           INFO HTTOutputHeaderTool::initialize()[m
+[38;5;153mToolSvc.HTTWriteOutput           INFO Creating empty branches in output file[m
+[38;5;153mToolSvc.HTTWriteOutput           INFO End of Tool initialize[m
+[93mHistogramPersistencySvc       WARNING Histograms saving not required.[m
+[38;5;153mApplicationMgr                   INFO Application Manager Initialized successfully[m
+[38;5;153mApplicationMgr                   INFO Application Manager Started successfully[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start of run 1    <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #1, run #1 0 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 0[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #1, run #1 1 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #2, run #1 1 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 1[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #2, run #1 2 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #3, run #1 2 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 2[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #3, run #1 3 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #4, run #1 3 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 3[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #4, run #1 4 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #5, run #1 4 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 4[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #5, run #1 5 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #6, run #1 5 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 5[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #6, run #1 6 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #7, run #1 6 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 6[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #7, run #1 7 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #8, run #1 7 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 7[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #8, run #1 8 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #9, run #1 8 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 8[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #9, run #1 9 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #10, run #1 9 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 9[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #10, run #1 10 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #11, run #1 10 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 10[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #11, run #1 11 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #12, run #1 11 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 11[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #12, run #1 12 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #13, run #1 12 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 12[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #13, run #1 13 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #14, run #1 13 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 13[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #14, run #1 14 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #15, run #1 14 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 14[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #15, run #1 15 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #16, run #1 15 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 15[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #16, run #1 16 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #17, run #1 16 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 16[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #17, run #1 17 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #18, run #1 17 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 17[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #18, run #1 18 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #19, run #1 18 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 18[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #19, run #1 19 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #20, run #1 19 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 19[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #20, run #1 20 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #21, run #1 20 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 20[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #21, run #1 21 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #22, run #1 21 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 21[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #22, run #1 22 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #23, run #1 22 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 22[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #23, run #1 23 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #24, run #1 23 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 23[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #24, run #1 24 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #25, run #1 24 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 24[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #25, run #1 25 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #26, run #1 25 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 25[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #26, run #1 26 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #27, run #1 26 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 26[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #27, run #1 27 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #28, run #1 27 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 27[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #28, run #1 28 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #29, run #1 28 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 28[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #29, run #1 29 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #30, run #1 29 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 29[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #30, run #1 30 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #31, run #1 30 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 30[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #31, run #1 31 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #32, run #1 31 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 31[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #32, run #1 32 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #33, run #1 32 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 32[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #33, run #1 33 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #34, run #1 33 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 33[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #34, run #1 34 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #35, run #1 34 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 34[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #35, run #1 35 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #36, run #1 35 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 35[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #36, run #1 36 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #37, run #1 36 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 36[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #37, run #1 37 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #38, run #1 37 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 37[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #38, run #1 38 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #39, run #1 38 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 38[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #39, run #1 39 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #40, run #1 39 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 39[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #40, run #1 40 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #41, run #1 40 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 40[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #41, run #1 41 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #42, run #1 41 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 41[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #42, run #1 42 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #43, run #1 42 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 42[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #43, run #1 43 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #44, run #1 43 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 43[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #44, run #1 44 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #45, run #1 44 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 44[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #45, run #1 45 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #46, run #1 45 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 45[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #46, run #1 46 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #47, run #1 46 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 46[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #47, run #1 47 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #48, run #1 47 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 47[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #48, run #1 48 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #49, run #1 48 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 48[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #49, run #1 49 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #50, run #1 49 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 49[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #50, run #1 50 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #51, run #1 50 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 50[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #51, run #1 51 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #52, run #1 51 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 51[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #52, run #1 52 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #53, run #1 52 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 52[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #53, run #1 53 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #54, run #1 53 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 53[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #54, run #1 54 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #55, run #1 54 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 54[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #55, run #1 55 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #56, run #1 55 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 55[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #56, run #1 56 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #57, run #1 56 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 56[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #57, run #1 57 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #58, run #1 57 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 57[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #58, run #1 58 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #59, run #1 58 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 58[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #59, run #1 59 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #60, run #1 59 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 59[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #60, run #1 60 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #61, run #1 60 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 60[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #61, run #1 61 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #62, run #1 61 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 61[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #62, run #1 62 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #63, run #1 62 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 62[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #63, run #1 63 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #64, run #1 63 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 63[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #64, run #1 64 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #65, run #1 64 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 64[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #65, run #1 65 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #66, run #1 65 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 65[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #66, run #1 66 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #67, run #1 66 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 66[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #67, run #1 67 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #68, run #1 67 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 67[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #68, run #1 68 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #69, run #1 68 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 68[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #69, run #1 69 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #70, run #1 69 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 69[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #70, run #1 70 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #71, run #1 70 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 70[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #71, run #1 71 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #72, run #1 71 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 71[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #72, run #1 72 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #73, run #1 72 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 72[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #73, run #1 73 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #74, run #1 73 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 73[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #74, run #1 74 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #75, run #1 74 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 74[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #75, run #1 75 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #76, run #1 75 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 75[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #76, run #1 76 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #77, run #1 76 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 76[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #77, run #1 77 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #78, run #1 77 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 77[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #78, run #1 78 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #79, run #1 78 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 78[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #79, run #1 79 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #80, run #1 79 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 79[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #80, run #1 80 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #81, run #1 80 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 80[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #81, run #1 81 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #82, run #1 81 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 81[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #82, run #1 82 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #83, run #1 82 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 82[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #83, run #1 83 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #84, run #1 83 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 83[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #84, run #1 84 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #85, run #1 84 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 84[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #85, run #1 85 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #86, run #1 85 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 85[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #86, run #1 86 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #87, run #1 86 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 86[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #87, run #1 87 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #88, run #1 87 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 87[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #88, run #1 88 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #89, run #1 88 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 88[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #89, run #1 89 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #90, run #1 89 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 89[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #90, run #1 90 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #91, run #1 90 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 90[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #91, run #1 91 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #92, run #1 91 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 91[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #92, run #1 92 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #93, run #1 92 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 92[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #93, run #1 93 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #94, run #1 93 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 93[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #94, run #1 94 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #95, run #1 94 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 94[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #95, run #1 95 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #96, run #1 95 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 95[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #96, run #1 96 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #97, run #1 96 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 96[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #97, run #1 97 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #98, run #1 97 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 97[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #98, run #1 98 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #99, run #1 98 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 98[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #99, run #1 99 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #100, run #1 99 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 99[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #100, run #1 100 events processed so far  <<<===[m
+[38;5;153mApplicationMgr                   INFO Application Manager Stopped successfully[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO -----------------------------------------------------------------------[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO Summary Statistics:[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	Events with first stage roads=80/82, miss=2.43902%[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	First stage road matched to truth eff=80/82, miss=2.43902%[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 		[1-2 GeV]=100% [2-4 Gev]=90.4762% [4+ GeV]=100%[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	First stage road Ave=8.70732, exclude zero=8.925[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	First stage road hit combinations Ave=27.0732, exclude zero=27.75[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO  [m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	First Stage Tracks Final Ave=0, Events=0/82(0%)[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	First stage track matched to truth: all=0, passChi2=0, final=0/82, miss=100%[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	wrt offline=0/82(0%)[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO -----------------------------------------------------------------------[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO  [m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO ----------------------------------FIRST STAGE HITS----------------------------------[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of first stage hits / event: Entries=82, Mean=9.41463, RMS=2.52283, RMS95=1.63408[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of first stage hit layers / event: Entries=82, Mean=7.85366, RMS=0.386414, RMS95=0.414331[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO ---------------------------------FIRST STAGE ROADS----------------------------------[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of first stage roads found per event: Entries=82, Mean=8.70732, RMS=3.41263, RMS95=3.39051[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of first stage roads with unique hits found per event: Entries=82, Mean=3.46341, RMS=1.61695, RMS95=1.67814[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of first stage roads per matched truth track: Entries=80, Mean=8.925, RMS=3.16139, RMS95=3.19488[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO total number of first stage hit combinations per event: Entries=82, Mean=27.0732, RMS=49.3948, RMS95=49.3948[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of hits per first stage road: Entries=714, Mean=8.37955, RMS=1.4744, RMS95=1.21545[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of layers hit per first stage road: Entries=714, Mean=7.41457, RMS=0.492647, RMS95=0.537259[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO layer ids with hits, per first stage road: Entries=5294, Mean=3.52947, RMS=2.30401, RMS95=2.30401[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO -------------------------------FIRST STAGE HTT TRACKS-------------------------------[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of all first stage tracks found per event: Entries=82, Mean=0, RMS=0, RMS95=0[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of first stage tracks found per event passing Chi^2 cut: Entries=82, Mean=0, RMS=0, RMS95=0[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of first stage tracks found per event after overlap removal: Entries=82, Mean=0, RMS=0, RMS95=0[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO Chi^2 of all first stage tracks: Entries=0, Mean=0, RMS=0, RMS95=0[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO Chi^2 per ndof of all first stage tracks: Entries=0, Mean=0, RMS=0, RMS95=0[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO NMissing on all first stage tracks: Entries=0, Mean=0, RMS=0, RMS95=0[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO ------------------------------TRUTH TRACKS------------------------------[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO --------------------------------OFFLINE CLUSTERS--------------------------------[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of offline clusters found per event: Entries=82, Mean=15.2683, RMS=2.84154, RMS95=2.24633[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO --------------------------------FIRST STAGE CLUSTERS--------------------------------[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of first stage clusters found per event: Entries=82, Mean=9.41463, RMS=2.52283, RMS95=1.63408[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO layer of first stage clusters: Entries=772, Mean=3.40803, RMS=2.31028, RMS95=2.31028[m
+[38;5;153mAthAlgSeq                        INFO Finalizing AthAlgSeq...[m
+[38;5;153mAthOutSeq                        INFO Finalizing AthOutSeq...[m
+[38;5;153mAthRegSeq                        INFO Finalizing AthRegSeq...[m
+[38;5;153mAthMasterSeq                     INFO Finalizing AthMasterSeq...[m
+[38;5;153mTrigHTTBankSvc                   INFO TrigHTTBankSvc::finalize()[m
+[38;5;153mHTTEventSelectionSvc             INFO HTTEventSelectionSvc::finalize()[m
+[38;5;153mAthDictLoaderSvc                 INFO in finalize...[m
+[38;5;153mToolSvc                          INFO Removing all tools created by ToolSvc[m
+[38;5;153mToolSvc.HTTWriteOutput           INFO finalize: closing files[m
+[38;5;153mToolSvc.HTTDataFlowTool          INFO HTTDataFlowTool::finalize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTEventMonitorTool::finalize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTTrackMonitorTool::finalize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTRoadMonitorTool::finalize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTClusterMonitorTool::finalize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTHitMonitorTool::finalize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool      INFO HTTMonitorUnionTool::finalize()[m
+[38;5;153mToolSvc.HTTOverlapRemovalTo...   INFO HTTOverlapRemovalTool::finalize()[m
+[38;5;153mToolSvc.HTTHoughMonitorTool      INFO Misses: 0[m
+[38;5;153mToolSvc.HTTHoughMonitorTool      INFO 	Not enough hit layers: 0[m
+[38;5;153mToolSvc.HTTClusteringTool        INFO HTTClusteringTool::finalize()[m
+[38;5;153mToolSvc.HTT_RawToLogicalHit...   INFO HTT_RawToLogicalHitsTool::finalized()[m
+[38;5;153mToolSvc.HTTReadInput             INFO finalize: closing files[m
+[38;5;153m*****Chrono*****                 INFO ****************************************************************************************************[m
+[38;5;153m*****Chrono*****                 INFO  The Final CPU consumption ( Chrono ) Table (ordered)[m
+[38;5;153m*****Chrono*****                 INFO ****************************************************************************************************[m
+[38;5;153m*****Chrono*****                 INFO ****************************************************************************************************[m
+[38;5;153mChronoStatSvc.finalize()         INFO  Service finalized successfully [m
+[38;5;153mApplicationMgr                   INFO Application Manager Finalized successfully[m
+[38;5;153mApplicationMgr                   INFO Application Manager Terminated successfully[m
+Py:Athena            INFO leaving with code 0: "successful run"

@@ -1,0 +1,146 @@
+Running on region 0 with 5 events
+Running with second stage enabled.
+Running on loghit_direct.root
+Processing finished with status = 0; now read back
+Py:Athena            INFO including file "AthenaCommon/Preparation.py"
+Py:Athena            INFO including file "AthenaCommon/Bootstrap.py"
+Py:Athena            INFO including file "AthenaCommon/Atlas.UnixStandardJob.py"
+Py:Athena            INFO executing ROOT6Setup
+Py:Athena            INFO including file "AthenaCommon/Execution.py"
+Py:Athena            INFO including file "runargs.HTTOutputMonitorAlg.py"
+Py:Athena            INFO including file "TrigHTTAlgorithms/skeleton.HTTOutputMonitorAlg.py"
+('Final pars: ', {'region': '0', 'withPU': False, 'sampleType': 'singleMuons', 'secondStage': True})
+Py:Athena            INFO including file "AthenaCommon/runbatch.py"
+ApplicationMgr       INFO Application Manager Configured successfully
+Py:Athena            INFO including file "AthenaCommon/Preparation.py"
+Py:Athena            INFO including file "AthenaCommon/Bootstrap.py"
+Py:Athena            INFO including file "AthenaCommon/Atlas.UnixStandardJob.py"
+Py:Athena            INFO executing ROOT6Setup
+Py:Athena            INFO including file "AthenaCommon/Execution.py"
+ApplicationMgr       INFO Application Manager Configured successfully
+Py:Athena            INFO including file "AthenaCommon/runbatch.py"
+[38;5;153mStatusCodeSvc                    INFO initialize[m
+[38;5;153mAthDictLoaderSvc                 INFO in initialize...[m
+[38;5;153mAthDictLoaderSvc                 INFO acquired Dso-registry[m
+[38;5;153mChronoStatSvc                    INFO  Number of skipped events for MemStat-1[m
+[38;5;153mCoreDumpSvc                      INFO install f-a-t-a-l handler... (flag = -1)[m
+[38;5;153mCoreDumpSvc                      INFO Handling signals: 11(Segmentation fault) 7(Bus error) 4(Illegal instruction) 8(Floating point exception) [m
+[38;5;153mAthMasterSeq                     INFO Member list: AthSequencer/AthAlgSeq, AthSequencer/AthOutSeq, AthSequencer/AthRegSeq[m
+[38;5;153mAthAlgSeq                        INFO Member list: HTTOutputMonitorAlg[m
+[38;5;153mToolSvc.HTTOutputHeaderTool      INFO HTTOutputHeaderTool::initialize()[m
+[38;5;153mToolSvc.HTTOutputHeaderTool      INFO End of Tool initialize[m
+[38;5;153mToolSvc.HTTMonitorUnionTool      INFO HTTMonitorUnionTool::initialize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTHitMonitorTool::initialize()[m
+[38;5;153mHTTEventSelectionSvc             INFO Creating the slices object[m
+[38;5;153mHTTEventSelectionSvc             INFO HTTEventSelectionSvc::initialize(): regionID = 0, min = {phi:0.3 q/pt:-0.001 d0:-2 z0:-150 eta:0.1}, max = {phi:0.5 q/pt:0.001 d0:2 z0:150 eta:0.3}, sampleType = singleMuons, withPU = 0[m
+[38;5;153mHTTPlaneMap_1st                  INFO Using 8 logical layers and 9 coordinates[m
+[38;5;153mHTTPlaneMap_2nd                  INFO Using 13 logical layers and 18 coordinates[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTClusterMonitorTool::initialize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTRoadMonitorTool::initialize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTTrackMonitorTool::initialize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTEventMonitorTool::initialize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTSecondStageMonitorTool::initialize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool      INFO Running with 7 monitor tool(s).[m
+[38;5;153mToolSvc.HTTDataFlowTool          INFO HTTDataFlowTool::initialize()[m
+[93mHistogramPersistencySvc       WARNING Histograms saving not required.[m
+[38;5;153mApplicationMgr                   INFO Application Manager Initialized successfully[m
+[38;5;153mApplicationMgr                   INFO Application Manager Started successfully[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start of run 1    <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #1, run #1 0 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #1, run #1 1 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #2, run #1 1 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #2, run #1 2 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #3, run #1 2 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #3, run #1 3 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #4, run #1 3 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #4, run #1 4 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #5, run #1 4 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #5, run #1 5 events processed so far  <<<===[m
+[38;5;153mApplicationMgr                   INFO Application Manager Stopped successfully[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO -----------------------------------------------------------------------[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO Summary Statistics:[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	Events with first stage roads=4/4, miss=0%[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	First stage road matched to truth eff=4/4, miss=0%[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 		[1-2 GeV]=100% [2-4 Gev]=100% [4+ GeV]=-nan%[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	First stage road Ave=13.25, exclude zero=13.25[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	First stage road hit combinations Ave=29.5, exclude zero=29.5[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO  [m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	Events with second stage roads=4/4, miss=0%[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	Second stage road matched to truth eff=4/4, miss=0%[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 		[1-2 GeV]=100% [2-4 Gev]=100% [4+ GeV]=-nan%[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	Second stage road Ave=4, exclude zero=4[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	Second stage road hit combinations Ave=4, exclude zero=4[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO  [m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	First Stage Tracks Final Ave=1, Events=4/4(100%)[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	First stage track matched to truth: all=4, passChi2=4, final=4/4, miss=0%[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	wrt offline=4/4(100%)[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO  [m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	Second Stage Tracks Final Ave=1, Events=4/4(100%)[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	Second stage track matched to truth: all=4, passChi2=4, final=4/4, miss=0%[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	wrt offline=4/4(100%)[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO -----------------------------------------------------------------------[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO  [m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO ----------------------------------FIRST STAGE HITS----------------------------------[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of first stage hits / event: Entries=4, Mean=12.5, RMS=4.15331, RMS95=4.15331[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of first stage hit layers / event: Entries=4, Mean=8, RMS=0, RMS95=0[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO ----------------------------------SECOND STAGE HITS----------------------------------[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of second stage hits / event: Entries=4, Mean=18.5, RMS=3.84057, RMS95=3.84057[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of second stage hit layers / event: Entries=4, Mean=13, RMS=0, RMS95=0[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO ---------------------------------FIRST STAGE ROADS----------------------------------[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of first stage roads found per event: Entries=4, Mean=13.25, RMS=6.0156, RMS95=6.0156[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of first stage roads with unique hits found per event: Entries=4, Mean=9.5, RMS=2.69258, RMS95=2.69258[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of first stage roads per matched truth track: Entries=4, Mean=13.25, RMS=6.0156, RMS95=6.0156[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO total number of first stage hit combinations per event: Entries=4, Mean=29.5, RMS=28.64, RMS95=28.64[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of hits per first stage road: Entries=53, Mean=7.98113, RMS=2.09663, RMS95=2.09004[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of layers hit per first stage road: Entries=53, Mean=6.75472, RMS=0.611391, RMS95=0.666756[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO layer ids with hits, per first stage road: Entries=358, Mean=3.62011, RMS=2.1652, RMS95=2.1652[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO ---------------------------------SECOND STAGE ROADS----------------------------------[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of second stage roads found per event: Entries=4, Mean=4, RMS=1.73205, RMS95=1.73205[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of second stage roads with unique hits found per event: Entries=4, Mean=3.75, RMS=1.63936, RMS95=1.63936[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of second stage roads per matched truth track: Entries=4, Mean=4, RMS=1.73205, RMS95=1.73205[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO total number of second stage hit combinations per event: Entries=4, Mean=4, RMS=1.73205, RMS95=1.73205[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of hits per second stage road: Entries=16, Mean=12.375, RMS=0.484123, RMS95=0.484123[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of layers hit per second stage road: Entries=16, Mean=12.375, RMS=0.484123, RMS95=0.484123[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO layer ids with hits, per second stage road: Entries=198, Mean=6.17677, RMS=3.70831, RMS95=4.04052[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO -------------------------------FIRST STAGE HTT TRACKS-------------------------------[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of all first stage tracks found per event: Entries=4, Mean=29.5, RMS=28.64, RMS95=28.64[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of first stage tracks found per event passing Chi^2 cut: Entries=4, Mean=24.25, RMS=24.232, RMS95=24.232[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of first stage tracks found per event after overlap removal: Entries=4, Mean=1, RMS=0, RMS95=0[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO Chi^2 of all first stage tracks: Entries=118, Mean=355.414, RMS=1058.69, RMS95=1058.69[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO Chi^2 per ndof of all first stage tracks: Entries=118, Mean=134.874, RMS=432.605, RMS95=432.605[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO NMissing on all first stage tracks: Entries=118, Mean=0.949153, RMS=0.62229, RMS95=0.678642[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO -------------------------------SECOND STAGE HTT TRACKS-------------------------------[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of all second stage tracks found per event: Entries=4, Mean=4, RMS=1.73205, RMS95=1.73205[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of second stage tracks found per event passing Chi^2 cut: Entries=4, Mean=4, RMS=1.73205, RMS95=1.73205[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of second stage tracks found per event after overlap removal: Entries=4, Mean=1, RMS=0, RMS95=0[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO Chi^2 of all second stage tracks: Entries=16, Mean=13.971, RMS=11.0214, RMS95=11.0214[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO Chi^2 per ndof of all second stage tracks: Entries=16, Mean=1.19639, RMS=0.99398, RMS95=0.99398[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO NMissing on all second stage tracks: Entries=16, Mean=1.0625, RMS=0.899218, RMS95=0.899218[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO ------------------------------TRUTH TRACKS------------------------------[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO --------------------------------OFFLINE CLUSTERS--------------------------------[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of offline clusters found per event: Entries=4, Mean=17.25, RMS=2.38485, RMS95=2.38485[m
+[38;5;153mAthAlgSeq                        INFO Finalizing AthAlgSeq...[m
+[38;5;153mAthOutSeq                        INFO Finalizing AthOutSeq...[m
+[38;5;153mAthRegSeq                        INFO Finalizing AthRegSeq...[m
+[38;5;153mAthMasterSeq                     INFO Finalizing AthMasterSeq...[m
+[38;5;153mHTTEventSelectionSvc             INFO HTTEventSelectionSvc::finalize()[m
+[38;5;153mAthDictLoaderSvc                 INFO in finalize...[m
+[38;5;153mToolSvc                          INFO Removing all tools created by ToolSvc[m
+[38;5;153mToolSvc.HTTDataFlowTool          INFO HTTDataFlowTool::finalize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTSecondStageMonitorTool::finalize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTEventMonitorTool::finalize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTTrackMonitorTool::finalize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTRoadMonitorTool::finalize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTClusterMonitorTool::finalize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTHitMonitorTool::finalize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool      INFO HTTMonitorUnionTool::finalize()[m
+[38;5;153mToolSvc.HTTOutputHeaderTool      INFO finalize: closing files[m
+[38;5;153m*****Chrono*****                 INFO ****************************************************************************************************[m
+[38;5;153m*****Chrono*****                 INFO  The Final CPU consumption ( Chrono ) Table (ordered)[m
+[38;5;153m*****Chrono*****                 INFO ****************************************************************************************************[m
+[38;5;153m*****Chrono*****                 INFO ****************************************************************************************************[m
+[38;5;153mChronoStatSvc.finalize()         INFO  Service finalized successfully [m
+[38;5;153mApplicationMgr                   INFO Application Manager Finalized successfully[m
+[38;5;153mApplicationMgr                   INFO Application Manager Terminated successfully[m
+Py:Athena            INFO leaving with code 0: "successful run"
+OutputMonitor finished with status = 0

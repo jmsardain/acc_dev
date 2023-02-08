@@ -1,0 +1,1515 @@
+Py:Athena            INFO including file "AthenaCommon/Preparation.py"
+Py:Athena            INFO including file "AthenaCommon/Bootstrap.py"
+Py:Athena            INFO including file "AthenaCommon/Atlas.UnixStandardJob.py"
+Py:Athena            INFO executing ROOT6Setup
+Py:Athena            INFO including file "AthenaCommon/Execution.py"
+Py:Athena            INFO including file "TrigHTTInput/HTTDumpOutputStatAlg_jobOptions.py"
+Output file ['httsim_output.root']
+/***** Private AlgTool HTTOutputHeaderTool/HTTReadInput ********************************************
+|-AuditFinalize   = False
+|-AuditInitialize = False
+|-AuditStart      = False
+|-AuditStop       = False
+|-AuditTools      = False
+|-DetStore        = ServiceHandle('StoreGateSvc/DetectorStore')
+|-EvtStore        = ServiceHandle('StoreGateSvc')
+|                 (default: [])
+|-MonitorService  = 'MonitorSvc'
+|-OutputLevel     = 2  (default: 7)
+|-RWstatus        = 'READ'  (default: 'READ')
+|-RunSecondStage  = False
+|-UserStore       = ServiceHandle('UserDataSvc/UserDataSvc')
+\----- (End of Private AlgTool HTTOutputHeaderTool/HTTReadInput) -----------------------------------
+/***** Private AlgTool HTTOutputHeaderTool/HTTWriteOutput ******************************************
+|-AuditFinalize   = False
+|-AuditInitialize = False
+|-AuditStart      = False
+|-AuditStop       = False
+|-AuditTools      = False
+|-DetStore        = ServiceHandle('StoreGateSvc/DetectorStore')
+|-EvtStore        = ServiceHandle('StoreGateSvc')
+|-InFileName      = ['httsim_output.root']  (default: [])
+|-MonitorService  = 'MonitorSvc'
+|-OutputLevel     = 2  (default: 7)
+|-RWstatus        = 'RECREATE'  (default: 'READ')
+|-RunSecondStage  = False
+|-UserStore       = ServiceHandle('UserDataSvc/UserDataSvc')
+\----- (End of Private AlgTool HTTOutputHeaderTool/HTTWriteOutput) ---------------------------------
+/***** Algorithm AthSequencer/TopAlg ***************************************************************
+|-AuditAlgorithms           = False
+|-AuditBeginRun             = False
+|-AuditEndRun               = False
+|-AuditExecute              = False
+|-AuditFinalize             = False
+|-AuditInitialize           = False
+|-AuditReinitialize         = False
+|-AuditRestart              = False
+|-AuditStart                = False
+|-AuditStop                 = False
+|-ContinueEventloopOnFPE    = False
+|-DetStore                  = ServiceHandle('StoreGateSvc/DetectorStore')
+|-Enable                    = True
+|-ErrorCounter              = 0
+|-ErrorMax                  = 1
+|-EvtStore                  = ServiceHandle('StoreGateSvc')
+|-Members                   = ['HTTDumpOutputStatAlg/HTTDumpOutputStatAlg']  (default: [])
+|-MonitorService            = 'MonitorSvc'
+|-OutputLevel               = 0
+|-RegisterForContextService = False
+|-StopOverride              = False
+|-TimeOut                   = 0.0
+|-UserStore                 = ServiceHandle('UserDataSvc/UserDataSvc')
+|=/***** Algorithm HTTDumpOutputStatAlg/HTTDumpOutputStatAlg *****************************************
+| |-AuditAlgorithms           = False
+| |-AuditBeginRun             = False
+| |-AuditEndRun               = False
+| |-AuditExecute              = False
+| |-AuditFinalize             = False
+| |-AuditInitialize           = False
+| |-AuditReinitialize         = False
+| |-AuditRestart              = False
+| |-AuditStart                = False
+| |-AuditStop                 = False
+| |-DetStore                  = ServiceHandle('StoreGateSvc/DetectorStore')
+| |-Enable                    = True
+| |-ErrorCounter              = 0
+| |-ErrorMax                  = 1
+| |-EvtStore                  = ServiceHandle('StoreGateSvc')
+| |-InputTool                 = PublicToolHandle('HTTOutputHeaderTool/HTTReadInput')
+| |                           (default: 'HTTOutputHeaderTool/HTTOutputHeaderTool')
+| |-MonitorService            = 'MonitorSvc'
+| |-OutputLevel               = 2  (default: 0)
+| |-OutputTool                = PublicToolHandle('HTTOutputHeaderTool/HTTWriteOutput')
+| |                           (default: 'HTTOutputHeaderTool/HTTOutputHeaderTool')
+| |-RegisterForContextService = False
+| |-UserStore                 = ServiceHandle('UserDataSvc/UserDataSvc')
+| \----- (End of Algorithm HTTDumpOutputStatAlg/HTTDumpOutputStatAlg) --------------------------------
+\----- (End of Algorithm AthSequencer/TopAlg) ------------------------------------------------------
+Py:Athena            INFO including file "AthenaCommon/runbatch.py"
+[38;5;153mStatusCodeSvc                    INFO initialize[m
+[38;5;153mAthDictLoaderSvc                 INFO in initialize...[m
+[38;5;153mAthDictLoaderSvc                 INFO acquired Dso-registry[m
+[38;5;153mChronoStatSvc                    INFO  Number of skipped events for MemStat-1[m
+[38;5;153mCoreDumpSvc                      INFO install f-a-t-a-l handler... (flag = -1)[m
+[38;5;153mCoreDumpSvc                      INFO Handling signals: 11(Segmentation fault) 7(Bus error) 4(Illegal instruction) 8(Floating point exception) [m
+[38;5;153mAthMasterSeq                     INFO Member list: AthSequencer/AthAlgSeq, AthSequencer/AthOutSeq, AthSequencer/AthRegSeq[m
+[38;5;153mAthAlgSeq                        INFO Member list: HTTDumpOutputStatAlg[m
+[38;5;153mHTTDumpOutputStatAlg             INFO HTTDumpOutputStatAlg::initialize()[m
+[38;5;153mToolSvc.HTTReadInput             INFO HTTOutputHeaderTool::initialize()[m
+[38;5;133mToolSvc.HTTReadInput            DEBUG Initialized in READ MODE[m
+[38;5;153mToolSvc.HTTReadInput             INFO End of Tool initialize[m
+[38;5;153mToolSvc.HTTWriteOutput           INFO HTTOutputHeaderTool::initialize()[m
+[38;5;133mToolSvc.HTTWriteOutput          DEBUG Opening file httsim_output.root in RECREATE mode.[m
+[38;5;153mToolSvc.HTTWriteOutput           INFO Creating empty branches in output file[m
+[38;5;153mToolSvc.HTTWriteOutput           INFO End of Tool initialize[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG Finished initialize[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG Adding public ToolHandle tool ToolSvc.HTTReadInput (HTTOutputHeaderTool)[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG Adding public ToolHandle tool ToolSvc.HTTWriteOutput (HTTOutputHeaderTool)[m
+[93mHistogramPersistencySvc       WARNING Histograms saving not required.[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start of run 1    <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #1, run #1 0 events processed so far  <<<===[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG Running on event [m
+[38;5;133mToolSvc.HTTReadInput            DEBUG Asked Event 0 in this file; current total is 0[m
+[38;5;133mToolSvc.HTTReadInput            DEBUG Asked in first stage header event: Event 100007001 	Run 242000[m
+[38;5;133mToolSvc.HTTReadInput            DEBUG n.roads_1st = 15[m
+[38;5;133mToolSvc.HTTReadInput            DEBUG n.tracks_1st = 15[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=0        SECTOR1=978      BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007001 HITMAP=511      TYPE=0   NMISS=0  
+    PHI=0.3842     Q/PT=-2.85e-04  d0=0.5644     ETA=0.2248     z0=45.71      Chi2=10.41        OChi2=10.41       
+
+Hit 0: type=clustered tech=pixel zone=barrel etamod=3 phimod=4 physLayer=4 eta=594 phi=159
+Hit 1: type=clustered tech=strip zone=barrel etamod=9 phimod=1 physLayer=0 eta=1 phi=1084
+Hit 2: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=2 eta=3 phi=948
+Hit 3: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=3 eta=3 phi=956
+Hit 4: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=4 eta=0 phi=1225
+Hit 5: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=5 eta=0 phi=1272
+Hit 6: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=6 eta=1 phi=504
+Hit 7: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=7 eta=1 phi=510
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=1        SECTOR1=978      BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007001 HITMAP=495      TYPE=0   NMISS=1  
+    PHI=0.3842     Q/PT=-2.85e-04  d0=0.5644     ETA=0.2248     z0=45.71      Chi2=10.41        OChi2=10.41       
+
+Hit 0: type=clustered tech=pixel zone=barrel etamod=3 phimod=4 physLayer=4 eta=594 phi=159
+Hit 1: type=clustered tech=strip zone=barrel etamod=9 phimod=1 physLayer=0 eta=1 phi=1084
+Hit 2: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=2 eta=3 phi=948
+Hit 3: type=guessed tech=strip zone=undefined etamod=-1 phimod=0 physLayer=0 eta=-1 phi=956
+Hit 4: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=4 eta=0 phi=1225
+Hit 5: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=5 eta=0 phi=1272
+Hit 6: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=6 eta=1 phi=504
+Hit 7: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=7 eta=1 phi=510
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=2        SECTOR1=978      BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007001 HITMAP=383      TYPE=0   NMISS=1  
+    PHI=0.3841     Q/PT=-2.85e-04  d0=0.5807     ETA=0.226      z0=45.36      Chi2=7.843        OChi2=7.843       
+
+Hit 0: type=clustered tech=pixel zone=barrel etamod=3 phimod=4 physLayer=4 eta=594 phi=159
+Hit 1: type=clustered tech=strip zone=barrel etamod=9 phimod=1 physLayer=0 eta=1 phi=1084
+Hit 2: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=2 eta=3 phi=948
+Hit 3: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=3 eta=3 phi=956
+Hit 4: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=4 eta=0 phi=1225
+Hit 5: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=5 eta=0 phi=1272
+Hit 6: type=guessed tech=strip zone=undefined etamod=-1 phimod=0 physLayer=0 eta=-1 phi=505
+Hit 7: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=7 eta=1 phi=510
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=3        SECTOR1=978      BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007001 HITMAP=508      TYPE=0   NMISS=2  
+    PHI=0.3854     Q/PT=-2.83e-04  d0=0.1148     ETA=0.2212     z0=48.79      Chi2=6.997        OChi2=6.997       
+
+Hit 0: type=guessed tech=pixel zone=undefined etamod=0 phimod=0 physLayer=0 eta=634 phi=156
+Hit 1: type=clustered tech=strip zone=barrel etamod=9 phimod=1 physLayer=0 eta=1 phi=1084
+Hit 2: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=2 eta=3 phi=948
+Hit 3: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=3 eta=3 phi=956
+Hit 4: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=4 eta=0 phi=1225
+Hit 5: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=5 eta=0 phi=1272
+Hit 6: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=6 eta=1 phi=504
+Hit 7: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=7 eta=1 phi=510
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=4        SECTOR1=978      BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007001 HITMAP=255      TYPE=0   NMISS=1  
+    PHI=0.3842     Q/PT=-2.84e-04  d0=0.5548     ETA=0.226      z0=45.37      Chi2=10.44        OChi2=10.44       
+
+Hit 0: type=clustered tech=pixel zone=barrel etamod=3 phimod=4 physLayer=4 eta=594 phi=159
+Hit 1: type=clustered tech=strip zone=barrel etamod=9 phimod=1 physLayer=0 eta=1 phi=1084
+Hit 2: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=2 eta=3 phi=948
+Hit 3: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=3 eta=3 phi=956
+Hit 4: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=4 eta=0 phi=1225
+Hit 5: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=5 eta=0 phi=1272
+Hit 6: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=6 eta=1 phi=504
+Hit 7: type=guessed tech=strip zone=undefined etamod=-1 phimod=0 physLayer=0 eta=-1 phi=509
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=5        SECTOR1=2658     BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007001 HITMAP=503      TYPE=0   NMISS=1  
+    PHI=0.3842     Q/PT=-2.84e-04  d0=0.571      ETA=0.2239     z0=45.99      Chi2=12.79        OChi2=12.79       
+
+Hit 0: type=clustered tech=pixel zone=barrel etamod=3 phimod=4 physLayer=4 eta=594 phi=159
+Hit 1: type=clustered tech=strip zone=barrel etamod=9 phimod=1 physLayer=0 eta=1 phi=1084
+Hit 2: type=guessed tech=strip zone=undefined etamod=-1 phimod=0 physLayer=0 eta=-1 phi=948
+Hit 3: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=3 eta=3 phi=956
+Hit 4: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=4 eta=0 phi=1225
+Hit 5: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=5 eta=0 phi=1272
+Hit 6: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=6 eta=1 phi=504
+Hit 7: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=7 eta=1 phi=510
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=6        SECTOR1=3258     BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007001 HITMAP=495      TYPE=0   NMISS=1  
+    PHI=0.384      Q/PT=-2.84e-04  d0=0.6024     ETA=0.2252     z0=45.61      Chi2=7.286        OChi2=7.286       
+
+Hit 0: type=clustered tech=pixel zone=barrel etamod=3 phimod=4 physLayer=4 eta=594 phi=159
+Hit 1: type=clustered tech=strip zone=barrel etamod=9 phimod=1 physLayer=0 eta=1 phi=1084
+Hit 2: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=2 eta=3 phi=948
+Hit 3: type=guessed tech=strip zone=undefined etamod=-1 phimod=0 physLayer=0 eta=-1 phi=956
+Hit 4: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=4 eta=0 phi=1225
+Hit 5: type=clustered tech=strip zone=barrel etamod=6 phimod=4 physLayer=5 eta=0 phi=92
+Hit 6: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=6 eta=1 phi=504
+Hit 7: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=7 eta=1 phi=510
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=7        SECTOR1=5158     BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007001 HITMAP=508      TYPE=0   NMISS=2  
+    PHI=0.385      Q/PT=-2.84e-04  d0=0.2223     ETA=0.2215     z0=48.94      Chi2=8.417        OChi2=8.417       
+
+Hit 0: type=guessed tech=pixel zone=undefined etamod=0 phimod=0 physLayer=0 eta=-186 phi=156
+Hit 1: type=clustered tech=strip zone=barrel etamod=9 phimod=1 physLayer=0 eta=1 phi=1084
+Hit 2: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=2 eta=3 phi=948
+Hit 3: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=3 eta=3 phi=956
+Hit 4: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=4 eta=0 phi=1225
+Hit 5: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=5 eta=0 phi=1272
+Hit 6: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=6 eta=1 phi=504
+Hit 7: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=7 eta=1 phi=510
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=8        SECTOR1=8519     BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007001 HITMAP=507      TYPE=0   NMISS=1  
+    PHI=0.3902     Q/PT=-2.68e-04  d0=-1.538     ETA=0.2211     z0=48.99      Chi2=0.2063       OChi2=0.2063      
+
+Hit 0: type=wildcard tech=pixel zone=undefined etamod=0 phimod=0 physLayer=0 eta=-1 phi=-1
+Hit 1: type=guessed tech=strip zone=undefined etamod=-1 phimod=0 physLayer=0 eta=-1 phi=1079
+Hit 2: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=2 eta=3 phi=948
+Hit 3: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=3 eta=3 phi=956
+Hit 4: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=4 eta=0 phi=1225
+Hit 5: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=5 eta=0 phi=1272
+Hit 6: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=6 eta=1 phi=504
+Hit 7: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=7 eta=1 phi=510
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=9        SECTOR1=9470     BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007001 HITMAP=511      TYPE=0   NMISS=0  
+    PHI=0.3867     Q/PT=-2.76e-04  d0=-0.01349   ETA=0.2206     z0=49.31      Chi2=4.484        OChi2=4.484       
+
+Hit 0: type=wildcard tech=pixel zone=undefined etamod=0 phimod=0 physLayer=0 eta=-1 phi=-1
+Hit 1: type=clustered tech=strip zone=barrel etamod=9 phimod=1 physLayer=0 eta=1 phi=1084
+Hit 2: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=2 eta=3 phi=948
+Hit 3: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=3 eta=3 phi=956
+Hit 4: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=4 eta=0 phi=1225
+Hit 5: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=5 eta=0 phi=1272
+Hit 6: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=6 eta=1 phi=504
+Hit 7: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=7 eta=1 phi=510
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=10       SECTOR1=9470     BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007001 HITMAP=495      TYPE=0   NMISS=1  
+    PHI=0.3867     Q/PT=-2.76e-04  d0=-0.0727    ETA=0.2174     z0=52.29      Chi2=4.924        OChi2=4.924       
+
+Hit 0: type=wildcard tech=pixel zone=undefined etamod=0 phimod=0 physLayer=0 eta=-1 phi=-1
+Hit 1: type=clustered tech=strip zone=barrel etamod=9 phimod=1 physLayer=0 eta=1 phi=1084
+Hit 2: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=2 eta=3 phi=948
+Hit 3: type=guessed tech=strip zone=undefined etamod=-1 phimod=0 physLayer=0 eta=-1 phi=955
+Hit 4: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=4 eta=0 phi=1225
+Hit 5: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=5 eta=0 phi=1272
+Hit 6: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=6 eta=1 phi=504
+Hit 7: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=7 eta=1 phi=510
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=11       SECTOR1=18557    BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007001 HITMAP=507      TYPE=0   NMISS=1  
+    PHI=0.3828     Q/PT=-2.87e-04  d0=0.8571     ETA=0.2306     z0=43.25      Chi2=16.94        OChi2=16.94       
+
+Hit 0: type=clustered tech=pixel zone=barrel etamod=3 phimod=4 physLayer=4 eta=594 phi=159
+Hit 1: type=guessed tech=strip zone=undefined etamod=-1 phimod=0 physLayer=0 eta=-1 phi=1083
+Hit 2: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=2 eta=3 phi=948
+Hit 3: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=3 eta=3 phi=956
+Hit 4: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=4 eta=0 phi=1225
+Hit 5: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=5 eta=0 phi=1272
+Hit 6: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=6 eta=1 phi=504
+Hit 7: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=7 eta=1 phi=510
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=12       SECTOR1=19816    BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007001 HITMAP=511      TYPE=0   NMISS=0  
+    PHI=0.3842     Q/PT=-2.85e-04  d0=0.5474     ETA=0.2255     z0=45.47      Chi2=10.65        OChi2=10.65       
+
+Hit 0: type=clustered tech=pixel zone=barrel etamod=3 phimod=4 physLayer=4 eta=594 phi=159
+Hit 1: type=clustered tech=strip zone=barrel etamod=9 phimod=1 physLayer=0 eta=1 phi=1084
+Hit 2: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=2 eta=3 phi=948
+Hit 3: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=3 eta=3 phi=956
+Hit 4: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=4 eta=0 phi=1225
+Hit 5: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=5 eta=0 phi=1272
+Hit 6: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=6 eta=1 phi=504
+Hit 7: type=wildcard tech=strip zone=undefined etamod=-1 phimod=0 physLayer=0 eta=-1 phi=-1
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=13       SECTOR1=19816    BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007001 HITMAP=383      TYPE=0   NMISS=1  
+    PHI=0.3832     Q/PT=-2.90e-04  d0=0.7115     ETA=0.2259     z0=45.36      Chi2=4.015        OChi2=4.015       
+
+Hit 0: type=clustered tech=pixel zone=barrel etamod=3 phimod=4 physLayer=4 eta=594 phi=159
+Hit 1: type=clustered tech=strip zone=barrel etamod=9 phimod=1 physLayer=0 eta=1 phi=1084
+Hit 2: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=2 eta=3 phi=948
+Hit 3: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=3 eta=3 phi=956
+Hit 4: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=4 eta=0 phi=1225
+Hit 5: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=5 eta=0 phi=1272
+Hit 6: type=guessed tech=strip zone=undefined etamod=-1 phimod=0 physLayer=0 eta=-1 phi=510
+Hit 7: type=wildcard tech=strip zone=undefined etamod=-1 phimod=0 physLayer=0 eta=-1 phi=-1
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=14       SECTOR1=25190    BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007001 HITMAP=255      TYPE=0   NMISS=1  
+    PHI=0.3829     Q/PT=-2.91e-04  d0=0.7745     ETA=0.2274     z0=45.09      Chi2=28.54        OChi2=28.54       
+
+Hit 0: type=clustered tech=pixel zone=barrel etamod=3 phimod=4 physLayer=4 eta=594 phi=159
+Hit 1: type=clustered tech=strip zone=barrel etamod=9 phimod=1 physLayer=0 eta=1 phi=1084
+Hit 2: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=2 eta=3 phi=948
+Hit 3: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=3 eta=3 phi=956
+Hit 4: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=4 eta=0 phi=1225
+Hit 5: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=5 eta=0 phi=1272
+Hit 6: type=wildcard tech=strip zone=undefined etamod=-1 phimod=0 physLayer=0 eta=-1 phi=-1
+Hit 7: type=guessed tech=strip zone=undefined etamod=-1 phimod=0 physLayer=0 eta=-1 phi=549
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=0        SECTOR1=-1       BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007001 HITMAP=262143   TYPE=0   NMISS=0  
+    PHI=0.3839     Q/PT=-2.85e-04  d0=0.533      ETA=0.2255     z0=45.51      Chi2=17.77        OChi2=17.77       
+
+Hit 0: type=clustered tech=pixel zone=barrel etamod=3 phimod=1 physLayer=0 eta=262 phi=198
+Hit 1: type=clustered tech=pixel zone=barrel etamod=2 phimod=1 physLayer=1 eta=534 phi=560
+Hit 2: type=clustered tech=pixel zone=barrel etamod=3 phimod=2 physLayer=2 eta=11 phi=414
+Hit 3: type=clustered tech=pixel zone=barrel etamod=3 phimod=3 physLayer=3 eta=233 phi=281
+Hit 4: type=clustered tech=pixel zone=barrel etamod=3 phimod=4 physLayer=4 eta=594 phi=159
+Hit 5: type=clustered tech=strip zone=barrel etamod=9 phimod=1 physLayer=0 eta=1 phi=1084
+Hit 6: type=clustered tech=strip zone=barrel etamod=9 phimod=1 physLayer=1 eta=1 phi=1122
+Hit 7: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=2 eta=3 phi=948
+Hit 8: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=3 eta=3 phi=956
+Hit 9: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=4 eta=0 phi=1225
+Hit 10: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=5 eta=0 phi=1272
+Hit 11: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=6 eta=1 phi=504
+Hit 12: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=7 eta=1 phi=510
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=1        SECTOR1=-1       BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007001 HITMAP=262095   TYPE=0   NMISS=2  
+    PHI=0.3837     Q/PT=-2.86e-04  d0=0.5431     ETA=0.2255     z0=45.51      Chi2=17.7         OChi2=17.7        
+
+Hit 0: type=clustered tech=pixel zone=barrel etamod=3 phimod=1 physLayer=0 eta=262 phi=198
+Hit 1: type=clustered tech=pixel zone=barrel etamod=2 phimod=1 physLayer=1 eta=534 phi=560
+Hit 2: type=guessed tech=pixel zone=undefined etamod=0 phimod=0 physLayer=0 eta=837 phi=413
+Hit 3: type=clustered tech=pixel zone=barrel etamod=3 phimod=3 physLayer=3 eta=233 phi=281
+Hit 4: type=clustered tech=pixel zone=barrel etamod=3 phimod=4 physLayer=4 eta=594 phi=159
+Hit 5: type=clustered tech=strip zone=barrel etamod=9 phimod=1 physLayer=0 eta=1 phi=1084
+Hit 6: type=clustered tech=strip zone=barrel etamod=9 phimod=1 physLayer=1 eta=1 phi=1122
+Hit 7: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=2 eta=3 phi=948
+Hit 8: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=3 eta=3 phi=956
+Hit 9: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=4 eta=0 phi=1225
+Hit 10: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=5 eta=0 phi=1272
+Hit 11: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=6 eta=1 phi=504
+Hit 12: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=7 eta=1 phi=510
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=2        SECTOR1=-1       BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007001 HITMAP=262140   TYPE=0   NMISS=2  
+    PHI=0.3852     Q/PT=-2.84e-04  d0=0.3983     ETA=0.2255     z0=45.51      Chi2=16.52        OChi2=16.52       
+
+Hit 0: type=guessed tech=pixel zone=undefined etamod=0 phimod=0 physLayer=0 eta=-148 phi=196
+Hit 1: type=clustered tech=pixel zone=barrel etamod=2 phimod=1 physLayer=1 eta=534 phi=560
+Hit 2: type=clustered tech=pixel zone=barrel etamod=3 phimod=2 physLayer=2 eta=11 phi=414
+Hit 3: type=clustered tech=pixel zone=barrel etamod=3 phimod=3 physLayer=3 eta=233 phi=281
+Hit 4: type=clustered tech=pixel zone=barrel etamod=3 phimod=4 physLayer=4 eta=594 phi=159
+Hit 5: type=clustered tech=strip zone=barrel etamod=9 phimod=1 physLayer=0 eta=1 phi=1084
+Hit 6: type=clustered tech=strip zone=barrel etamod=9 phimod=1 physLayer=1 eta=1 phi=1122
+Hit 7: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=2 eta=3 phi=948
+Hit 8: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=3 eta=3 phi=956
+Hit 9: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=4 eta=0 phi=1225
+Hit 10: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=5 eta=0 phi=1272
+Hit 11: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=6 eta=1 phi=504
+Hit 12: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=7 eta=1 phi=510
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=3        SECTOR1=-1       BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007001 HITMAP=260095   TYPE=0   NMISS=1  
+    PHI=0.3838     Q/PT=-2.86e-04  d0=0.532      ETA=0.2256     z0=45.5       Chi2=22.93        OChi2=22.93       
+
+Hit 0: type=clustered tech=pixel zone=barrel etamod=3 phimod=1 physLayer=0 eta=262 phi=198
+Hit 1: type=clustered tech=pixel zone=barrel etamod=2 phimod=1 physLayer=1 eta=534 phi=560
+Hit 2: type=clustered tech=pixel zone=barrel etamod=3 phimod=2 physLayer=2 eta=11 phi=414
+Hit 3: type=clustered tech=pixel zone=barrel etamod=3 phimod=3 physLayer=3 eta=233 phi=281
+Hit 4: type=clustered tech=pixel zone=barrel etamod=3 phimod=4 physLayer=4 eta=594 phi=159
+Hit 5: type=clustered tech=strip zone=barrel etamod=9 phimod=1 physLayer=0 eta=1 phi=1084
+Hit 6: type=guessed tech=strip zone=undefined etamod=-1 phimod=0 physLayer=0 eta=-1 phi=1121
+Hit 7: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=2 eta=3 phi=948
+Hit 8: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=3 eta=3 phi=956
+Hit 9: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=4 eta=0 phi=1225
+Hit 10: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=5 eta=0 phi=1272
+Hit 11: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=6 eta=1 phi=504
+Hit 12: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=7 eta=1 phi=510
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=4        SECTOR1=-1       BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007001 HITMAP=262131   TYPE=0   NMISS=2  
+    PHI=0.3836     Q/PT=-2.90e-04  d0=0.6423     ETA=0.2255     z0=45.52      Chi2=67.01        OChi2=67.01       
+
+Hit 0: type=clustered tech=pixel zone=barrel etamod=3 phimod=1 physLayer=0 eta=262 phi=198
+Hit 1: type=guessed tech=pixel zone=undefined etamod=0 phimod=0 physLayer=0 eta=509 phi=-65
+Hit 2: type=clustered tech=pixel zone=barrel etamod=3 phimod=2 physLayer=2 eta=11 phi=414
+Hit 3: type=clustered tech=pixel zone=barrel etamod=3 phimod=3 physLayer=3 eta=233 phi=281
+Hit 4: type=clustered tech=pixel zone=barrel etamod=3 phimod=4 physLayer=4 eta=594 phi=159
+Hit 5: type=clustered tech=strip zone=barrel etamod=9 phimod=1 physLayer=0 eta=1 phi=1084
+Hit 6: type=clustered tech=strip zone=barrel etamod=9 phimod=1 physLayer=1 eta=1 phi=1122
+Hit 7: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=2 eta=3 phi=948
+Hit 8: type=clustered tech=strip zone=barrel etamod=11 phimod=2 physLayer=3 eta=3 phi=956
+Hit 9: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=4 eta=0 phi=1225
+Hit 10: type=clustered tech=strip zone=barrel etamod=6 phimod=3 physLayer=5 eta=0 phi=1272
+Hit 11: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=6 eta=1 phi=504
+Hit 12: type=clustered tech=strip zone=barrel etamod=7 phimod=5 physLayer=7 eta=1 phi=510
+[m
+[38;5;133mToolSvc.HTTWriteOutput          DEBUG Writing data in TTree[m
+[38;5;133mToolSvc.HTTWriteOutput          DEBUG Wrote Event 0 in first stage header event Event 100007001 	Run 242000[m
+[38;5;133mToolSvc.HTTWriteOutput          DEBUG n.roads_1st = 15[m
+[38;5;133mToolSvc.HTTWriteOutput          DEBUG n.roads_2nd = 5[m
+[38;5;133mToolSvc.HTTWriteOutput          DEBUG n.tracks_1st = 15[m
+[38;5;133mToolSvc.HTTWriteOutput          DEBUG n.tracks_2nd = 5[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #1, run #1 1 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #2, run #1 1 events processed so far  <<<===[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG Running on event [m
+[38;5;133mToolSvc.HTTReadInput            DEBUG Asked Event 1 in this file; current total is 1[m
+[38;5;133mToolSvc.HTTReadInput            DEBUG Asked in first stage header event: Event 100007018 	Run 242000[m
+[38;5;133mToolSvc.HTTReadInput            DEBUG n.roads_1st = 5[m
+[38;5;133mToolSvc.HTTReadInput            DEBUG n.tracks_1st = 5[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=0        SECTOR1=16185    BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007018 HITMAP=511      TYPE=0   NMISS=0  
+    PHI=0.3136     Q/PT=8.33e-04   d0=-0.3248    ETA=0.1512     z0=134.5      Chi2=5.836        OChi2=5.836       
+
+Hit 0: type=clustered tech=pixel zone=barrel etamod=5 phimod=2 physLayer=4 eta=293 phi=477
+Hit 1: type=clustered tech=strip zone=barrel etamod=11 phimod=0 physLayer=0 eta=3 phi=1192
+Hit 2: type=clustered tech=strip zone=barrel etamod=12 phimod=1 physLayer=2 eta=0 phi=169
+Hit 3: type=clustered tech=strip zone=barrel etamod=12 phimod=1 physLayer=3 eta=0 phi=189
+Hit 4: type=clustered tech=strip zone=barrel etamod=7 phimod=1 physLayer=4 eta=1 phi=187
+Hit 5: type=clustered tech=strip zone=barrel etamod=7 phimod=1 physLayer=5 eta=1 phi=182
+Hit 6: type=clustered tech=strip zone=barrel etamod=7 phimod=0 physLayer=6 eta=1 phi=869
+Hit 7: type=clustered tech=strip zone=barrel etamod=7 phimod=0 physLayer=7 eta=1 phi=835
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=1        SECTOR1=16185    BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007018 HITMAP=507      TYPE=0   NMISS=1  
+    PHI=0.3147     Q/PT=8.37e-04   d0=-0.646     ETA=0.1513     z0=134.5      Chi2=2.695        OChi2=2.695       
+
+Hit 0: type=clustered tech=pixel zone=barrel etamod=5 phimod=2 physLayer=4 eta=293 phi=477
+Hit 1: type=guessed tech=strip zone=undefined etamod=-1 phimod=0 physLayer=0 eta=-1 phi=1194
+Hit 2: type=clustered tech=strip zone=barrel etamod=12 phimod=1 physLayer=2 eta=0 phi=169
+Hit 3: type=clustered tech=strip zone=barrel etamod=12 phimod=1 physLayer=3 eta=0 phi=189
+Hit 4: type=clustered tech=strip zone=barrel etamod=7 phimod=1 physLayer=4 eta=1 phi=187
+Hit 5: type=clustered tech=strip zone=barrel etamod=7 phimod=1 physLayer=5 eta=1 phi=182
+Hit 6: type=clustered tech=strip zone=barrel etamod=7 phimod=0 physLayer=6 eta=1 phi=869
+Hit 7: type=clustered tech=strip zone=barrel etamod=7 phimod=0 physLayer=7 eta=1 phi=835
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=2        SECTOR1=33439    BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007018 HITMAP=507      TYPE=0   NMISS=1  
+    PHI=0.315      Q/PT=8.38e-04   d0=-0.6658    ETA=0.1523     z0=134.2      Chi2=2.014        OChi2=2.014       
+
+Hit 0: type=clustered tech=pixel zone=barrel etamod=5 phimod=2 physLayer=4 eta=293 phi=477
+Hit 1: type=guessed tech=strip zone=undefined etamod=-1 phimod=0 physLayer=0 eta=-1 phi=1160
+Hit 2: type=clustered tech=strip zone=barrel etamod=12 phimod=1 physLayer=2 eta=0 phi=169
+Hit 3: type=clustered tech=strip zone=barrel etamod=12 phimod=1 physLayer=3 eta=0 phi=189
+Hit 4: type=clustered tech=strip zone=barrel etamod=7 phimod=1 physLayer=4 eta=1 phi=187
+Hit 5: type=clustered tech=strip zone=barrel etamod=7 phimod=1 physLayer=5 eta=1 phi=182
+Hit 6: type=clustered tech=strip zone=barrel etamod=7 phimod=0 physLayer=6 eta=1 phi=869
+Hit 7: type=clustered tech=strip zone=barrel etamod=7 phimod=0 physLayer=7 eta=1 phi=835
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=3        SECTOR1=44304    BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007018 HITMAP=511      TYPE=0   NMISS=0  
+    PHI=0.3128     Q/PT=8.31e-04   d0=-0.2179    ETA=0.1515     z0=134.2      Chi2=10.74        OChi2=10.74       
+
+Hit 0: type=clustered tech=pixel zone=barrel etamod=5 phimod=2 physLayer=4 eta=293 phi=477
+Hit 1: type=clustered tech=strip zone=barrel etamod=11 phimod=0 physLayer=0 eta=3 phi=1192
+Hit 2: type=clustered tech=strip zone=barrel etamod=12 phimod=1 physLayer=2 eta=0 phi=169
+Hit 3: type=clustered tech=strip zone=barrel etamod=12 phimod=1 physLayer=3 eta=0 phi=189
+Hit 4: type=clustered tech=strip zone=barrel etamod=7 phimod=1 physLayer=4 eta=1 phi=187
+Hit 5: type=clustered tech=strip zone=barrel etamod=7 phimod=1 physLayer=5 eta=1 phi=182
+Hit 6: type=clustered tech=strip zone=barrel etamod=7 phimod=0 physLayer=6 eta=1 phi=869
+Hit 7: type=wildcard tech=strip zone=undefined etamod=-1 phimod=0 physLayer=0 eta=-1 phi=-1
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=4        SECTOR1=48352    BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007018 HITMAP=255      TYPE=0   NMISS=1  
+    PHI=0.3147     Q/PT=8.33e-04   d0=-0.4335    ETA=0.1538     z0=133.9      Chi2=9.581        OChi2=9.581       
+
+Hit 0: type=clustered tech=pixel zone=barrel etamod=5 phimod=2 physLayer=4 eta=293 phi=477
+Hit 1: type=clustered tech=strip zone=barrel etamod=11 phimod=0 physLayer=0 eta=3 phi=1192
+Hit 2: type=clustered tech=strip zone=barrel etamod=12 phimod=1 physLayer=2 eta=0 phi=169
+Hit 3: type=clustered tech=strip zone=barrel etamod=12 phimod=1 physLayer=3 eta=0 phi=189
+Hit 4: type=clustered tech=strip zone=barrel etamod=7 phimod=1 physLayer=4 eta=1 phi=187
+Hit 5: type=clustered tech=strip zone=barrel etamod=7 phimod=1 physLayer=5 eta=1 phi=182
+Hit 6: type=wildcard tech=strip zone=undefined etamod=-1 phimod=0 physLayer=0 eta=-1 phi=-1
+Hit 7: type=guessed tech=strip zone=undefined etamod=-1 phimod=0 physLayer=0 eta=-1 phi=870
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=0        SECTOR1=-1       BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007018 HITMAP=262140   TYPE=0   NMISS=2  
+    PHI=0.3139     Q/PT=8.32e-04   d0=-0.4658    ETA=0.1483     z0=135.1      Chi2=11.79        OChi2=11.79       
+
+Hit 0: type=guessed tech=pixel zone=undefined etamod=0 phimod=0 physLayer=0 eta=350 phi=112
+Hit 1: type=clustered tech=pixel zone=barrel etamod=4 phimod=1 physLayer=1 eta=506 phi=326
+Hit 2: type=clustered tech=pixel zone=barrel etamod=4 phimod=1 physLayer=2 eta=653 phi=635
+Hit 3: type=clustered tech=pixel zone=barrel etamod=5 phimod=2 physLayer=3 eta=95 phi=245
+Hit 4: type=clustered tech=pixel zone=barrel etamod=5 phimod=2 physLayer=4 eta=293 phi=477
+Hit 5: type=clustered tech=strip zone=barrel etamod=11 phimod=0 physLayer=0 eta=3 phi=1192
+Hit 6: type=clustered tech=strip zone=barrel etamod=12 phimod=0 physLayer=1 eta=0 phi=1212
+Hit 7: type=clustered tech=strip zone=barrel etamod=12 phimod=1 physLayer=2 eta=0 phi=169
+Hit 8: type=clustered tech=strip zone=barrel etamod=12 phimod=1 physLayer=3 eta=0 phi=189
+Hit 9: type=clustered tech=strip zone=barrel etamod=7 phimod=1 physLayer=4 eta=1 phi=187
+Hit 10: type=clustered tech=strip zone=barrel etamod=7 phimod=1 physLayer=5 eta=1 phi=182
+Hit 11: type=clustered tech=strip zone=barrel etamod=7 phimod=0 physLayer=6 eta=1 phi=869
+Hit 12: type=clustered tech=strip zone=barrel etamod=7 phimod=0 physLayer=7 eta=1 phi=835
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=1        SECTOR1=-1       BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007018 HITMAP=262095   TYPE=0   NMISS=2  
+    PHI=0.3138     Q/PT=8.40e-04   d0=-0.4716    ETA=0.1473     z0=135.3      Chi2=10.1         OChi2=10.1        
+
+Hit 0: type=clustered tech=pixel zone=barrel etamod=7 phimod=1 physLayer=0 eta=352 phi=112
+Hit 1: type=clustered tech=pixel zone=barrel etamod=4 phimod=1 physLayer=1 eta=506 phi=326
+Hit 2: type=guessed tech=pixel zone=undefined etamod=0 phimod=0 physLayer=0 eta=711 phi=-2
+Hit 3: type=clustered tech=pixel zone=barrel etamod=5 phimod=2 physLayer=3 eta=95 phi=245
+Hit 4: type=clustered tech=pixel zone=barrel etamod=5 phimod=2 physLayer=4 eta=293 phi=477
+Hit 5: type=clustered tech=strip zone=barrel etamod=11 phimod=0 physLayer=0 eta=3 phi=1192
+Hit 6: type=clustered tech=strip zone=barrel etamod=12 phimod=0 physLayer=1 eta=0 phi=1212
+Hit 7: type=clustered tech=strip zone=barrel etamod=12 phimod=1 physLayer=2 eta=0 phi=169
+Hit 8: type=clustered tech=strip zone=barrel etamod=12 phimod=1 physLayer=3 eta=0 phi=189
+Hit 9: type=clustered tech=strip zone=barrel etamod=7 phimod=1 physLayer=4 eta=1 phi=187
+Hit 10: type=clustered tech=strip zone=barrel etamod=7 phimod=1 physLayer=5 eta=1 phi=182
+Hit 11: type=clustered tech=strip zone=barrel etamod=7 phimod=0 physLayer=6 eta=1 phi=869
+Hit 12: type=clustered tech=strip zone=barrel etamod=7 phimod=0 physLayer=7 eta=1 phi=835
+[m
+[38;5;133mToolSvc.HTTWriteOutput          DEBUG Writing data in TTree[m
+[38;5;133mToolSvc.HTTWriteOutput          DEBUG Wrote Event 1 in first stage header event Event 100007018 	Run 242000[m
+[38;5;133mToolSvc.HTTWriteOutput          DEBUG n.roads_1st = 5[m
+[38;5;133mToolSvc.HTTWriteOutput          DEBUG n.roads_2nd = 2[m
+[38;5;133mToolSvc.HTTWriteOutput          DEBUG n.tracks_1st = 5[m
+[38;5;133mToolSvc.HTTWriteOutput          DEBUG n.tracks_2nd = 2[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #2, run #1 2 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #3, run #1 2 events processed so far  <<<===[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG Running on event [m
+[38;5;133mToolSvc.HTTReadInput            DEBUG Asked Event 2 in this file; current total is 2[m
+[38;5;133mToolSvc.HTTReadInput            DEBUG Asked in first stage header event: Event 100007024 	Run 242000[m
+[38;5;133mToolSvc.HTTReadInput            DEBUG n.roads_1st = 8[m
+[38;5;133mToolSvc.HTTReadInput            DEBUG n.tracks_1st = 8[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=0        SECTOR1=1578     BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007024 HITMAP=507      TYPE=0   NMISS=1  
+    PHI=0.4888     Q/PT=-8.75e-04  d0=-0.5431    ETA=0.2062     z0=-103.7     Chi2=0.3273       OChi2=0.3273      
+
+Hit 0: type=clustered tech=pixel zone=barrel etamod=-2 phimod=5 physLayer=4 eta=739 phi=407
+Hit 1: type=guessed tech=strip zone=undefined etamod=-1 phimod=0 physLayer=0 eta=-1 phi=818
+Hit 2: type=clustered tech=strip zone=barrel etamod=4 phimod=4 physLayer=2 eta=0 phi=85
+Hit 3: type=clustered tech=strip zone=barrel etamod=4 phimod=4 physLayer=3 eta=0 phi=137
+Hit 4: type=clustered tech=strip zone=barrel etamod=3 phimod=6 physLayer=4 eta=1 phi=232
+Hit 5: type=clustered tech=strip zone=barrel etamod=3 phimod=6 physLayer=5 eta=1 phi=263
+Hit 6: type=clustered tech=strip zone=barrel etamod=4 phimod=8 physLayer=6 eta=0 phi=835
+Hit 7: type=clustered tech=strip zone=barrel etamod=4 phimod=8 physLayer=7 eta=0 phi=908
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=1        SECTOR1=1967     BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007024 HITMAP=511      TYPE=0   NMISS=0  
+    PHI=0.4885     Q/PT=-8.75e-04  d0=-0.4068    ETA=0.2059     z0=-103.7     Chi2=1.017        OChi2=1.017       
+
+Hit 0: type=clustered tech=pixel zone=barrel etamod=-2 phimod=5 physLayer=4 eta=739 phi=407
+Hit 1: type=clustered tech=strip zone=barrel etamod=-1 phimod=2 physLayer=0 eta=3 phi=817
+Hit 2: type=clustered tech=strip zone=barrel etamod=4 phimod=4 physLayer=2 eta=0 phi=85
+Hit 3: type=clustered tech=strip zone=barrel etamod=4 phimod=4 physLayer=3 eta=0 phi=137
+Hit 4: type=clustered tech=strip zone=barrel etamod=3 phimod=6 physLayer=4 eta=1 phi=232
+Hit 5: type=clustered tech=strip zone=barrel etamod=3 phimod=6 physLayer=5 eta=1 phi=263
+Hit 6: type=clustered tech=strip zone=barrel etamod=4 phimod=8 physLayer=6 eta=0 phi=835
+Hit 7: type=clustered tech=strip zone=barrel etamod=4 phimod=8 physLayer=7 eta=0 phi=908
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=2        SECTOR1=1967     BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007024 HITMAP=503      TYPE=0   NMISS=1  
+    PHI=0.4885     Q/PT=-8.75e-04  d0=-0.4134    ETA=0.2041     z0=-103.1     Chi2=4.461        OChi2=4.461       
+
+Hit 0: type=clustered tech=pixel zone=barrel etamod=-2 phimod=5 physLayer=4 eta=739 phi=407
+Hit 1: type=clustered tech=strip zone=barrel etamod=-1 phimod=2 physLayer=0 eta=3 phi=817
+Hit 2: type=guessed tech=strip zone=undefined etamod=-1 phimod=0 physLayer=0 eta=-1 phi=84
+Hit 3: type=clustered tech=strip zone=barrel etamod=4 phimod=4 physLayer=3 eta=0 phi=137
+Hit 4: type=clustered tech=strip zone=barrel etamod=3 phimod=6 physLayer=4 eta=1 phi=232
+Hit 5: type=clustered tech=strip zone=barrel etamod=3 phimod=6 physLayer=5 eta=1 phi=263
+Hit 6: type=clustered tech=strip zone=barrel etamod=4 phimod=8 physLayer=6 eta=0 phi=835
+Hit 7: type=clustered tech=strip zone=barrel etamod=4 phimod=8 physLayer=7 eta=0 phi=908
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=3        SECTOR1=1967     BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007024 HITMAP=479      TYPE=0   NMISS=1  
+    PHI=0.4885     Q/PT=-8.75e-04  d0=-0.4068    ETA=0.2059     z0=-103.7     Chi2=1.017        OChi2=1.017       
+
+Hit 0: type=clustered tech=pixel zone=barrel etamod=-2 phimod=5 physLayer=4 eta=739 phi=407
+Hit 1: type=clustered tech=strip zone=barrel etamod=-1 phimod=2 physLayer=0 eta=3 phi=817
+Hit 2: type=clustered tech=strip zone=barrel etamod=4 phimod=4 physLayer=2 eta=0 phi=85
+Hit 3: type=clustered tech=strip zone=barrel etamod=4 phimod=4 physLayer=3 eta=0 phi=137
+Hit 4: type=guessed tech=strip zone=undefined etamod=-1 phimod=0 physLayer=0 eta=-1 phi=232
+Hit 5: type=clustered tech=strip zone=barrel etamod=3 phimod=6 physLayer=5 eta=1 phi=263
+Hit 6: type=clustered tech=strip zone=barrel etamod=4 phimod=8 physLayer=6 eta=0 phi=835
+Hit 7: type=clustered tech=strip zone=barrel etamod=4 phimod=8 physLayer=7 eta=0 phi=908
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=4        SECTOR1=1967     BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007024 HITMAP=508      TYPE=0   NMISS=2  
+    PHI=0.4892     Q/PT=-8.73e-04  d0=-0.8016    ETA=0.2065     z0=-104.1     Chi2=0.6753       OChi2=0.6753      
+
+Hit 0: type=guessed tech=pixel zone=undefined etamod=0 phimod=0 physLayer=0 eta=734 phi=404
+Hit 1: type=clustered tech=strip zone=barrel etamod=-1 phimod=2 physLayer=0 eta=3 phi=817
+Hit 2: type=clustered tech=strip zone=barrel etamod=4 phimod=4 physLayer=2 eta=0 phi=85
+Hit 3: type=clustered tech=strip zone=barrel etamod=4 phimod=4 physLayer=3 eta=0 phi=137
+Hit 4: type=clustered tech=strip zone=barrel etamod=3 phimod=6 physLayer=4 eta=1 phi=232
+Hit 5: type=clustered tech=strip zone=barrel etamod=3 phimod=6 physLayer=5 eta=1 phi=263
+Hit 6: type=clustered tech=strip zone=barrel etamod=4 phimod=8 physLayer=6 eta=0 phi=835
+Hit 7: type=clustered tech=strip zone=barrel etamod=4 phimod=8 physLayer=7 eta=0 phi=908
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=5        SECTOR1=2216     BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007024 HITMAP=508      TYPE=0   NMISS=2  
+    PHI=0.4888     Q/PT=-8.74e-04  d0=-0.7404    ETA=0.2066     z0=-104.1     Chi2=0.648        OChi2=0.648       
+
+Hit 0: type=guessed tech=pixel zone=undefined etamod=0 phimod=0 physLayer=0 eta=-92 phi=404
+Hit 1: type=clustered tech=strip zone=barrel etamod=-1 phimod=2 physLayer=0 eta=3 phi=817
+Hit 2: type=clustered tech=strip zone=barrel etamod=4 phimod=4 physLayer=2 eta=0 phi=85
+Hit 3: type=clustered tech=strip zone=barrel etamod=4 phimod=4 physLayer=3 eta=0 phi=137
+Hit 4: type=clustered tech=strip zone=barrel etamod=3 phimod=6 physLayer=4 eta=1 phi=232
+Hit 5: type=clustered tech=strip zone=barrel etamod=3 phimod=6 physLayer=5 eta=1 phi=263
+Hit 6: type=clustered tech=strip zone=barrel etamod=4 phimod=8 physLayer=6 eta=0 phi=835
+Hit 7: type=clustered tech=strip zone=barrel etamod=4 phimod=8 physLayer=7 eta=0 phi=908
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=6        SECTOR1=14946    BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007024 HITMAP=508      TYPE=0   NMISS=2  
+    PHI=0.4891     Q/PT=-8.74e-04  d0=-0.7749    ETA=0.2043     z0=-102.5     Chi2=2.347        OChi2=2.347       
+
+Hit 0: type=guessed tech=pixel zone=undefined etamod=0 phimod=0 physLayer=0 eta=-76 phi=404
+Hit 1: type=clustered tech=strip zone=barrel etamod=-1 phimod=2 physLayer=0 eta=3 phi=817
+Hit 2: type=clustered tech=strip zone=barrel etamod=4 phimod=4 physLayer=2 eta=0 phi=85
+Hit 3: type=clustered tech=strip zone=barrel etamod=4 phimod=4 physLayer=3 eta=0 phi=137
+Hit 4: type=clustered tech=strip zone=barrel etamod=3 phimod=6 physLayer=4 eta=1 phi=232
+Hit 5: type=clustered tech=strip zone=barrel etamod=3 phimod=6 physLayer=5 eta=1 phi=263
+Hit 6: type=wildcard tech=strip zone=undefined etamod=-1 phimod=0 physLayer=0 eta=-1 phi=-1
+Hit 7: type=clustered tech=strip zone=barrel etamod=4 phimod=8 physLayer=7 eta=0 phi=908
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=7        SECTOR1=17119    BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007024 HITMAP=503      TYPE=0   NMISS=1  
+    PHI=0.489      Q/PT=-8.74e-04  d0=-0.6864    ETA=0.2051     z0=-103.2     Chi2=0.8168       OChi2=0.8168      
+
+Hit 0: type=wildcard tech=pixel zone=undefined etamod=0 phimod=0 physLayer=0 eta=-1 phi=-1
+Hit 1: type=clustered tech=strip zone=barrel etamod=-1 phimod=2 physLayer=0 eta=3 phi=817
+Hit 2: type=guessed tech=strip zone=undefined etamod=-1 phimod=0 physLayer=0 eta=-1 phi=85
+Hit 3: type=clustered tech=strip zone=barrel etamod=4 phimod=4 physLayer=3 eta=0 phi=137
+Hit 4: type=clustered tech=strip zone=barrel etamod=3 phimod=6 physLayer=4 eta=1 phi=232
+Hit 5: type=clustered tech=strip zone=barrel etamod=3 phimod=6 physLayer=5 eta=1 phi=263
+Hit 6: type=clustered tech=strip zone=barrel etamod=4 phimod=8 physLayer=6 eta=0 phi=835
+Hit 7: type=clustered tech=strip zone=barrel etamod=4 phimod=8 physLayer=7 eta=0 phi=908
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=0        SECTOR1=-1       BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007024 HITMAP=262143   TYPE=0   NMISS=0  
+    PHI=0.495      Q/PT=-8.70e-04  d0=-1.811     ETA=0.2114     z0=-105       Chi2=9.319        OChi2=9.319       
+
+Hit 0: type=clustered tech=pixel zone=barrel etamod=-5 phimod=1 physLayer=0 eta=113 phi=246
+Hit 1: type=clustered tech=pixel zone=barrel etamod=-3 phimod=2 physLayer=1 eta=778 phi=134
+Hit 2: type=clustered tech=pixel zone=barrel etamod=-2 phimod=3 physLayer=2 eta=174 phi=175
+Hit 3: type=clustered tech=pixel zone=barrel etamod=-2 phimod=4 physLayer=3 eta=545 phi=268
+Hit 4: type=clustered tech=pixel zone=barrel etamod=-2 phimod=5 physLayer=4 eta=739 phi=407
+Hit 5: type=clustered tech=strip zone=barrel etamod=-1 phimod=2 physLayer=0 eta=3 phi=817
+Hit 6: type=clustered tech=strip zone=barrel etamod=-1 phimod=2 physLayer=1 eta=3 phi=831
+Hit 7: type=clustered tech=strip zone=barrel etamod=4 phimod=4 physLayer=2 eta=0 phi=85
+Hit 8: type=clustered tech=strip zone=barrel etamod=4 phimod=4 physLayer=3 eta=0 phi=137
+Hit 9: type=clustered tech=strip zone=barrel etamod=3 phimod=6 physLayer=4 eta=1 phi=232
+Hit 10: type=clustered tech=strip zone=barrel etamod=3 phimod=6 physLayer=5 eta=1 phi=263
+Hit 11: type=clustered tech=strip zone=barrel etamod=4 phimod=8 physLayer=6 eta=0 phi=835
+Hit 12: type=clustered tech=strip zone=barrel etamod=4 phimod=8 physLayer=7 eta=0 phi=908
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=1        SECTOR1=-1       BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007024 HITMAP=262140   TYPE=0   NMISS=2  
+    PHI=0.4925     Q/PT=-8.72e-04  d0=-1.576     ETA=0.2114     z0=-105       Chi2=8.288        OChi2=8.288       
+
+Hit 0: type=guessed tech=pixel zone=undefined etamod=0 phimod=0 physLayer=0 eta=523 phi=249
+Hit 1: type=clustered tech=pixel zone=barrel etamod=-3 phimod=2 physLayer=1 eta=778 phi=134
+Hit 2: type=clustered tech=pixel zone=barrel etamod=-2 phimod=3 physLayer=2 eta=174 phi=175
+Hit 3: type=clustered tech=pixel zone=barrel etamod=-2 phimod=4 physLayer=3 eta=545 phi=268
+Hit 4: type=clustered tech=pixel zone=barrel etamod=-2 phimod=5 physLayer=4 eta=739 phi=407
+Hit 5: type=clustered tech=strip zone=barrel etamod=-1 phimod=2 physLayer=0 eta=3 phi=817
+Hit 6: type=clustered tech=strip zone=barrel etamod=-1 phimod=2 physLayer=1 eta=3 phi=831
+Hit 7: type=clustered tech=strip zone=barrel etamod=4 phimod=4 physLayer=2 eta=0 phi=85
+Hit 8: type=clustered tech=strip zone=barrel etamod=4 phimod=4 physLayer=3 eta=0 phi=137
+Hit 9: type=clustered tech=strip zone=barrel etamod=3 phimod=6 physLayer=4 eta=1 phi=232
+Hit 10: type=clustered tech=strip zone=barrel etamod=3 phimod=6 physLayer=5 eta=1 phi=263
+Hit 11: type=clustered tech=strip zone=barrel etamod=4 phimod=8 physLayer=6 eta=0 phi=835
+Hit 12: type=clustered tech=strip zone=barrel etamod=4 phimod=8 physLayer=7 eta=0 phi=908
+[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG TRACK: ID=2        SECTOR1=-1       BANK=-1       BARCODE=10001  BARCODE_F=1         EVENT=100007024 HITMAP=262131   TYPE=0   NMISS=2  
+    PHI=0.4932     Q/PT=-8.72e-04  d0=-1.745     ETA=0.2114     z0=-105       Chi2=5.032        OChi2=5.032       
+
+Hit 0: type=clustered tech=pixel zone=barrel etamod=-5 phimod=1 physLayer=0 eta=113 phi=246
+Hit 1: type=guessed tech=pixel zone=undefined etamod=0 phimod=0 physLayer=0 eta=-45 phi=132
+Hit 2: type=clustered tech=pixel zone=barrel etamod=-2 phimod=3 physLayer=2 eta=174 phi=175
+Hit 3: type=clustered tech=pixel zone=barrel etamod=-2 phimod=4 physLayer=3 eta=545 phi=268
+Hit 4: type=clustered tech=pixel zone=barrel etamod=-2 phimod=5 physLayer=4 eta=739 phi=407
+Hit 5: type=clustered tech=strip zone=barrel etamod=-1 phimod=2 physLayer=0 eta=3 phi=817
+Hit 6: type=clustered tech=strip zone=barrel etamod=-1 phimod=2 physLayer=1 eta=3 phi=831
+Hit 7: type=clustered tech=strip zone=barrel etamod=4 phimod=4 physLayer=2 eta=0 phi=85
+Hit 8: type=clustered tech=strip zone=barrel etamod=4 phimod=4 physLayer=3 eta=0 phi=137
+Hit 9: type=clustered tech=strip zone=barrel etamod=3 phimod=6 physLayer=4 eta=1 phi=232
+Hit 10: type=clustered tech=strip zone=barrel etamod=3 phimod=6 physLayer=5 eta=1 phi=263
+Hit 11: type=clustered tech=strip zone=barrel etamod=4 phimod=8 physLayer=6 eta=0 phi=835
+Hit 12: type=clustered tech=strip zone=barrel etamod=4 phimod=8 physLayer=7 eta=0 phi=908
+[m
+[38;5;133mToolSvc.HTTWriteOutput          DEBUG Writing data in TTree[m
+[38;5;133mToolSvc.HTTWriteOutput          DEBUG Wrote Event 2 in first stage header event Event 100007024 	Run 242000[m
+[38;5;133mToolSvc.HTTWriteOutput          DEBUG n.roads_1st = 8[m
+[38;5;133mToolSvc.HTTWriteOutput          DEBUG n.roads_2nd = 3[m
+[38;5;133mToolSvc.HTTWriteOutput          DEBUG n.tracks_1st = 8[m
+[38;5;133mToolSvc.HTTWriteOutput          DEBUG n.tracks_2nd = 3[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #3, run #1 3 events processed so far  <<<===[m
+[38;5;153mAthAlgSeq                        INFO Finalizing AthAlgSeq...[m
+[38;5;133mHTTDumpOutputStatAlg            DEBUG Calling destructor[m
+[38;5;153mAthOutSeq                        INFO Finalizing AthOutSeq...[m
+[38;5;153mAthRegSeq                        INFO Finalizing AthRegSeq...[m
+[38;5;153mAthMasterSeq                     INFO Finalizing AthMasterSeq...[m
+[38;5;153mAthDictLoaderSvc                 INFO in finalize...[m
+[38;5;153mToolSvc                          INFO Removing all tools created by ToolSvc[m
+[38;5;153mToolSvc.HTTWriteOutput           INFO finalize: closing files[m
+******************************************************************************
+*Tree    :HTTLogicalEventTree: data                                                   *
+*Entries :        3 : Total =          260404 bytes  File  Size =       2424 *
+*        :          : Tree compression factor =   7.77                       *
+******************************************************************************
+*Branch  :HTTLogicalEventInputHeader_1st                                     *
+*Entries :        3 : BranchElement (see below)                              *
+*............................................................................*
+*Br    0 :fUniqueID : UInt_t                                                 *
+*Entries :        3 : Total  Size=        704 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br    1 :fBits     : UInt_t                                                 *
+*Entries :        3 : Total  Size=        696 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br    2 :m_event   :                                                        *
+*Entries :        3 : Total  Size=      10209 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br    3 :m_event.fUniqueID : UInt_t                                         *
+*Entries :        3 : Total  Size=        752 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br    4 :m_event.fBits : UInt_t                                             *
+*Entries :        3 : Total  Size=        744 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br    5 :m_event.m_run_number : ULong_t                                     *
+*Entries :        3 : Total  Size=        782 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br    6 :m_event.m_event_number : ULong_t                                   *
+*Entries :        3 : Total  Size=        794 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br    7 :m_event.m_averageInteractionsPerCrossing : Float_t                 *
+*Entries :        3 : Total  Size=        890 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br    8 :m_event.m_actualInteractionsPerCrossing : Float_t                  *
+*Entries :        3 : Total  Size=        884 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br    9 :m_event.m_LB : Int_t                                               *
+*Entries :        3 : Total  Size=        722 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   10 :m_event.m_BCID : Int_t                                             *
+*Entries :        3 : Total  Size=        734 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   11 :m_event.m_extendedLevel1ID : UInt_t                                *
+*Entries :        3 : Total  Size=        806 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   12 :m_event.m_level1TriggerType : UInt_t                               *
+*Entries :        3 : Total  Size=        812 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   13 :m_event.m_level1TriggerInfo : vector<unsigned int>                 *
+*Entries :        3 : Total  Size=        846 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   14 :m_optional :                                                       *
+*Entries :        3 : Total  Size=      64851 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   15 :m_optional.fUniqueID : UInt_t                                      *
+*Entries :        3 : Total  Size=        770 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   16 :m_optional.fBits : UInt_t                                          *
+*Entries :        3 : Total  Size=        762 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   17 :m_optional.m_OfflineClusters : Int_t m_optional.m_OfflineClusters_ *
+*Entries :        3 : Total  Size=      35502 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   18 :m_optional.m_OfflineClusters.fUniqueID :                           *
+*         | UInt_t fUniqueID[m_optional.m_OfflineClusters_]                  *
+*Entries :        3 : Total  Size=       1172 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   19 :m_optional.m_OfflineClusters.fBits :                               *
+*         | UInt_t fBits[m_optional.m_OfflineClusters_]                      *
+*Entries :        3 : Total  Size=       1148 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   20 :m_optional.m_OfflineClusters.m_hitlist :                           *
+*         | vector<HTTHit> m_hitlist[m_optional.m_OfflineClusters_]          *
+*Entries :        3 : Total  Size=       1196 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   21 :m_optional.m_OfflineClusters.m_clusterEquiv.m_hitType :            *
+*         | Int_t m_hitType[m_optional.m_OfflineClusters_]                   *
+*Entries :        3 : Total  Size=       1232 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   22 :m_optional.m_OfflineClusters.m_clusterEquiv.m_detectorZone :       *
+*         | Int_t m_detectorZone[m_optional.m_OfflineClusters_]              *
+*Entries :        3 : Total  Size=       1262 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   23 :m_optional.m_OfflineClusters.m_clusterEquiv.m_detType :            *
+*         | Int_t m_detType[m_optional.m_OfflineClusters_]                   *
+*Entries :        3 : Total  Size=       1232 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   24 :m_optional.m_OfflineClusters.m_clusterEquiv.m_identifierHash :     *
+*         | UInt_t m_identifierHash[m_optional.m_OfflineClusters_]           *
+*Entries :        3 : Total  Size=       1274 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   25 :m_optional.m_OfflineClusters.m_clusterEquiv.m_layer_disk :         *
+*         | UInt_t m_layer_disk[m_optional.m_OfflineClusters_]               *
+*Entries :        3 : Total  Size=       1250 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   26 :m_optional.m_OfflineClusters.m_clusterEquiv.m_side :               *
+*         | UInt_t m_side[m_optional.m_OfflineClusters_]                     *
+*Entries :        3 : Total  Size=       1214 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   27 :m_optional.m_OfflineClusters.m_clusterEquiv.m_etaModule :          *
+*         | Int_t m_etaModule[m_optional.m_OfflineClusters_]                 *
+*Entries :        3 : Total  Size=       1244 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   28 :m_optional.m_OfflineClusters.m_clusterEquiv.m_phiModule :          *
+*         | UInt_t m_phiModule[m_optional.m_OfflineClusters_]                *
+*Entries :        3 : Total  Size=       1244 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   29 :m_optional.m_OfflineClusters.m_clusterEquiv.m_etaWidth :           *
+*         | UInt_t m_etaWidth[m_optional.m_OfflineClusters_]                 *
+*Entries :        3 : Total  Size=       1238 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   30 :m_optional.m_OfflineClusters.m_clusterEquiv.m_phiWidth :           *
+*         | UInt_t m_phiWidth[m_optional.m_OfflineClusters_]                 *
+*Entries :        3 : Total  Size=       1238 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   31 :m_optional.m_OfflineClusters.m_clusterEquiv.m_layer :              *
+*         | Int_t m_layer[m_optional.m_OfflineClusters_]                     *
+*Entries :        3 : Total  Size=       1220 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   32 :m_optional.m_OfflineClusters.m_clusterEquiv.m_section :            *
+*         | Int_t m_section[m_optional.m_OfflineClusters_]                   *
+*Entries :        3 : Total  Size=       1232 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   33 :m_optional.m_OfflineClusters.m_clusterEquiv.m_phiIndex :           *
+*         | Int_t m_phiIndex[m_optional.m_OfflineClusters_]                  *
+*Entries :        3 : Total  Size=       1238 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   34 :m_optional.m_OfflineClusters.m_clusterEquiv.m_etaIndex :           *
+*         | Int_t m_etaIndex[m_optional.m_OfflineClusters_]                  *
+*Entries :        3 : Total  Size=       1238 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   35 :m_optional.m_OfflineClusters.m_clusterEquiv.m_x :                  *
+*         | Float_t m_x[m_optional.m_OfflineClusters_]                       *
+*Entries :        3 : Total  Size=       1196 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   36 :m_optional.m_OfflineClusters.m_clusterEquiv.m_y :                  *
+*         | Float_t m_y[m_optional.m_OfflineClusters_]                       *
+*Entries :        3 : Total  Size=       1196 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   37 :m_optional.m_OfflineClusters.m_clusterEquiv.m_z :                  *
+*         | Float_t m_z[m_optional.m_OfflineClusters_]                       *
+*Entries :        3 : Total  Size=       1196 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   38 :m_optional.m_OfflineClusters.m_clusterEquiv.m_hw_word :            *
+*         | UInt_t m_hw_word[m_optional.m_OfflineClusters_]                  *
+*Entries :        3 : Total  Size=       1232 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   39 :m_optional.m_OfflineClusters.m_clusterEquiv.m_ToT :                *
+*         | UInt_t m_ToT[m_optional.m_OfflineClusters_]                      *
+*Entries :        3 : Total  Size=       1208 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   40 :m_optional.m_OfflineClusters.m_clusterEquiv.m_eventindex :         *
+*         | Long_t m_eventindex[m_optional.m_OfflineClusters_]               *
+*Entries :        3 : Total  Size=       1418 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   41 :m_optional.m_OfflineClusters.m_clusterEquiv.m_barcode :            *
+*         | Long_t m_barcode[m_optional.m_OfflineClusters_]                  *
+*Entries :        3 : Total  Size=       1400 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   42 :m_optional.m_OfflineClusters.m_clusterEquiv.m_barcode_pt :         *
+*         | Float_t m_barcode_pt[m_optional.m_OfflineClusters_]              *
+*Entries :        3 : Total  Size=       1250 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   43 :m_optional.m_OfflineClusters.m_clusterEquiv.m_parentage_mask :     *
+*         | ULong_t m_parentage_mask[m_optional.m_OfflineClusters_]          *
+*Entries :        3 : Total  Size=       1442 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   44 :m_optional.m_OfflineClusters.m_clusterEquiv.m_truth.fUniqueID :    *
+*         | UInt_t fUniqueID[m_optional.m_OfflineClusters_]                  *
+*Entries :        3 : Total  Size=       1264 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   45 :m_optional.m_OfflineClusters.m_clusterEquiv.m_truth.fBits :        *
+*         | UInt_t fBits[m_optional.m_OfflineClusters_]                      *
+*Entries :        3 : Total  Size=       1240 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   46 :m_optional.m_OfflineClusters.m_clusterEquiv.m_truth.m_truth :      *
+*         | map<pair<long,long>,float> m_truth[m_optional.m_OfflineClusters_]*
+*Entries :        3 : Total  Size=       1270 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   47 :m_optional.m_OfflineTracks : Int_t m_optional.m_OfflineTracks_     *
+*Entries :        3 : Total  Size=      13188 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   48 :m_optional.m_OfflineTracks.fUniqueID :                             *
+*         | UInt_t fUniqueID[m_optional.m_OfflineTracks_]                    *
+*Entries :        3 : Total  Size=       1000 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   49 :m_optional.m_OfflineTracks.fBits :                                 *
+*         | UInt_t fBits[m_optional.m_OfflineTracks_]                        *
+*Entries :        3 : Total  Size=        976 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   50 :m_optional.m_OfflineTracks.m_qoverpt :                             *
+*         | Double_t m_qoverpt[m_optional.m_OfflineTracks_]                  *
+*Entries :        3 : Total  Size=       1012 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   51 :m_optional.m_OfflineTracks.m_eta :                                 *
+*         | Double_t m_eta[m_optional.m_OfflineTracks_]                      *
+*Entries :        3 : Total  Size=        988 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   52 :m_optional.m_OfflineTracks.m_phi :                                 *
+*         | Double_t m_phi[m_optional.m_OfflineTracks_]                      *
+*Entries :        3 : Total  Size=        988 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   53 :m_optional.m_OfflineTracks.m_d0 :                                  *
+*         | Double_t m_d0[m_optional.m_OfflineTracks_]                       *
+*Entries :        3 : Total  Size=        982 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   54 :m_optional.m_OfflineTracks.m_z0 :                                  *
+*         | Double_t m_z0[m_optional.m_OfflineTracks_]                       *
+*Entries :        3 : Total  Size=        982 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   55 :m_optional.m_OfflineTracks.m_barcode :                             *
+*         | Long_t m_barcode[m_optional.m_OfflineTracks_]                    *
+*Entries :        3 : Total  Size=       1012 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   56 :m_optional.m_OfflineTracks.m_barcode_frac :                        *
+*         | Double_t m_barcode_frac[m_optional.m_OfflineTracks_]             *
+*Entries :        3 : Total  Size=       1042 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   57 :m_optional.m_OfflineTracks.m_hits :                                *
+*         | vector<HTTOfflineHit> m_hits[m_optional.m_OfflineTracks_]        *
+*Entries :        3 : Total  Size=       3382 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   58 :m_optional.m_TruthTracks : Int_t m_optional.m_TruthTracks_         *
+*Entries :        3 : Total  Size=      15246 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   59 :m_optional.m_TruthTracks.fUniqueID :                               *
+*         | UInt_t fUniqueID[m_optional.m_TruthTracks_]                      *
+*Entries :        3 : Total  Size=        984 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   60 :m_optional.m_TruthTracks.fBits :                                   *
+*         | UInt_t fBits[m_optional.m_TruthTracks_]                          *
+*Entries :        3 : Total  Size=        960 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   61 :m_optional.m_TruthTracks.m_d0 :                                    *
+*         | Double_t m_d0[m_optional.m_TruthTracks_]                         *
+*Entries :        3 : Total  Size=        966 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   62 :m_optional.m_TruthTracks.m_z0 :                                    *
+*         | Double_t m_z0[m_optional.m_TruthTracks_]                         *
+*Entries :        3 : Total  Size=        966 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   63 :m_optional.m_TruthTracks.m_vtx_x :                                 *
+*         | Double_t m_vtx_x[m_optional.m_TruthTracks_]                      *
+*Entries :        3 : Total  Size=        984 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   64 :m_optional.m_TruthTracks.m_vtx_y :                                 *
+*         | Double_t m_vtx_y[m_optional.m_TruthTracks_]                      *
+*Entries :        3 : Total  Size=        984 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   65 :m_optional.m_TruthTracks.m_vtx_z :                                 *
+*         | Double_t m_vtx_z[m_optional.m_TruthTracks_]                      *
+*Entries :        3 : Total  Size=        984 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   66 :m_optional.m_TruthTracks.m_px :                                    *
+*         | Double_t m_px[m_optional.m_TruthTracks_]                         *
+*Entries :        3 : Total  Size=        966 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   67 :m_optional.m_TruthTracks.m_py :                                    *
+*         | Double_t m_py[m_optional.m_TruthTracks_]                         *
+*Entries :        3 : Total  Size=        966 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   68 :m_optional.m_TruthTracks.m_pz :                                    *
+*         | Double_t m_pz[m_optional.m_TruthTracks_]                         *
+*Entries :        3 : Total  Size=        966 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   69 :m_optional.m_TruthTracks.m_q : Int_t m_q[m_optional.m_TruthTracks_]*
+*Entries :        3 : Total  Size=        948 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   70 :m_optional.m_TruthTracks.m_pdgcode :                               *
+*         | Int_t m_pdgcode[m_optional.m_TruthTracks_]                       *
+*Entries :        3 : Total  Size=        984 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   71 :m_optional.m_TruthTracks.m_barcode :                               *
+*         | Int_t m_barcode[m_optional.m_TruthTracks_]                       *
+*Entries :        3 : Total  Size=        984 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   72 :m_optional.m_TruthTracks.m_evtindex :                              *
+*         | Int_t m_evtindex[m_optional.m_TruthTracks_]                      *
+*Entries :        3 : Total  Size=        990 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   73 :m_optional.m_TruthTracks.m_barcode_frac_offline :                  *
+*         | Double_t m_barcode_frac_offline[m_optional.m_TruthTracks_]       *
+*Entries :        3 : Total  Size=       1074 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   74 :m_towers  : Int_t m_towers_                                        *
+*Entries :        3 : Total  Size=      12280 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   75 :m_towers.fUniqueID : UInt_t fUniqueID[m_towers_]                   *
+*Entries :        3 : Total  Size=        856 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   76 :m_towers.fBits : UInt_t fBits[m_towers_]                           *
+*Entries :        3 : Total  Size=        832 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   77 :m_towers.m_id : Int_t m_id[m_towers_]                              *
+*Entries :        3 : Total  Size=        826 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   78 :m_towers.m_Eta : Double_t m_Eta[m_towers_]                         *
+*Entries :        3 : Total  Size=        844 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   79 :m_towers.m_Phi : Double_t m_Phi[m_towers_]                         *
+*Entries :        3 : Total  Size=        844 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   80 :m_towers.m_DeltaEta : Double_t m_DeltaEta[m_towers_]               *
+*Entries :        3 : Total  Size=        874 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   81 :m_towers.m_DeltaPhi : Double_t m_DeltaPhi[m_towers_]               *
+*Entries :        3 : Total  Size=        874 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   82 :m_towers.m_Hits : vector<HTTHit> m_Hits[m_towers_]                 *
+*Entries :        3 : Total  Size=       5182 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Branch  :HTTLogicalEventOutputHeader                                        *
+*Entries :        3 : BranchElement (see below)                              *
+*............................................................................*
+*Br   83 :fUniqueID : UInt_t                                                 *
+*Entries :        3 : Total  Size=        704 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   84 :fBits     : UInt_t                                                 *
+*Entries :        3 : Total  Size=        696 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   85 :m_HTTRoads_1st : Int_t m_HTTRoads_1st_                             *
+*Entries :        3 : Total  Size=      14895 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   86 :m_HTTRoads_1st.fUniqueID : UInt_t fUniqueID[m_HTTRoads_1st_]       *
+*Entries :        3 : Total  Size=       1004 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   87 :m_HTTRoads_1st.fBits : UInt_t fBits[m_HTTRoads_1st_]               *
+*Entries :        3 : Total  Size=        980 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   88 :m_HTTRoads_1st.m_roadID : Int_t m_roadID[m_HTTRoads_1st_]          *
+*Entries :        3 : Total  Size=        998 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   89 :m_HTTRoads_1st.m_pid : Int_t m_pid[m_HTTRoads_1st_]                *
+*Entries :        3 : Total  Size=        980 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   90 :m_HTTRoads_1st.m_sector : Int_t m_sector[m_HTTRoads_1st_]          *
+*Entries :        3 : Total  Size=        998 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   91 :m_HTTRoads_1st.m_hit_layers : UInt_t m_hit_layers[m_HTTRoads_1st_] *
+*Entries :        3 : Total  Size=       1022 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   92 :m_HTTRoads_1st.m_wildcard_layers :                                 *
+*         | UInt_t m_wildcard_layers[m_HTTRoads_1st_]                        *
+*Entries :        3 : Total  Size=       1052 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   93 :m_HTTRoads_1st.m_hits :                                            *
+*         | vector<vector<const HTTHit*> > m_hits[m_HTTRoads_1st_]           *
+*Entries :        3 : Total  Size=       6939 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   94 :m_HTTRoads_2nd : Int_t m_HTTRoads_2nd_                             *
+*Entries :        3 : Total  Size=      16043 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   95 :m_HTTRoads_2nd.fUniqueID : UInt_t fUniqueID[m_HTTRoads_2nd_]       *
+*Entries :        3 : Total  Size=        932 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   96 :m_HTTRoads_2nd.fBits : UInt_t fBits[m_HTTRoads_2nd_]               *
+*Entries :        3 : Total  Size=        908 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   97 :m_HTTRoads_2nd.m_roadID : Int_t m_roadID[m_HTTRoads_2nd_]          *
+*Entries :        3 : Total  Size=        926 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   98 :m_HTTRoads_2nd.m_pid : Int_t m_pid[m_HTTRoads_2nd_]                *
+*Entries :        3 : Total  Size=        908 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br   99 :m_HTTRoads_2nd.m_sector : Int_t m_sector[m_HTTRoads_2nd_]          *
+*Entries :        3 : Total  Size=        926 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  100 :m_HTTRoads_2nd.m_hit_layers : UInt_t m_hit_layers[m_HTTRoads_2nd_] *
+*Entries :        3 : Total  Size=        950 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  101 :m_HTTRoads_2nd.m_wildcard_layers :                                 *
+*         | UInt_t m_wildcard_layers[m_HTTRoads_2nd_]                        *
+*Entries :        3 : Total  Size=        980 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  102 :m_HTTRoads_2nd.m_hits :                                            *
+*         | vector<vector<const HTTHit*> > m_hits[m_HTTRoads_2nd_]           *
+*Entries :        3 : Total  Size=       8591 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  103 :m_HTTTracks_1st : Int_t m_HTTTracks_1st_                           *
+*Entries :        3 : Total  Size=      44733 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  104 :m_HTTTracks_1st.fUniqueID : UInt_t fUniqueID[m_HTTTracks_1st_]     *
+*Entries :        3 : Total  Size=       1012 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  105 :m_HTTTracks_1st.fBits : UInt_t fBits[m_HTTTracks_1st_]             *
+*Entries :        3 : Total  Size=        988 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  106 :m_HTTTracks_1st.m_trackCorrType :                                  *
+*         | Int_t m_trackCorrType[m_HTTTracks_1st_]                          *
+*Entries :        3 : Total  Size=       1048 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  107 :m_HTTTracks_1st.m_trackStage : Int_t m_trackStage[m_HTTTracks_1st_]*
+*Entries :        3 : Total  Size=       1030 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  108 :m_HTTTracks_1st.m_doDeltaGPhis :                                   *
+*         | Bool_t m_doDeltaGPhis[m_HTTTracks_1st_]                          *
+*Entries :        3 : Total  Size=        958 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  109 :m_HTTTracks_1st.m_bankID : Int_t m_bankID[m_HTTTracks_1st_]        *
+*Entries :        3 : Total  Size=       1006 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  110 :m_HTTTracks_1st.m_patternID : Int_t m_patternID[m_HTTTracks_1st_]  *
+*Entries :        3 : Total  Size=       1024 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  111 :m_HTTTracks_1st.m_firstSectorID :                                  *
+*         | Int_t m_firstSectorID[m_HTTTracks_1st_]                          *
+*Entries :        3 : Total  Size=       1048 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  112 :m_HTTTracks_1st.m_secondSectorID :                                 *
+*         | Int_t m_secondSectorID[m_HTTTracks_1st_]                         *
+*Entries :        3 : Total  Size=       1054 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  113 :m_HTTTracks_1st.m_trackID : Int_t m_trackID[m_HTTTracks_1st_]      *
+*Entries :        3 : Total  Size=       1012 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  114 :m_HTTTracks_1st.m_IdealGeoCorr :                                   *
+*         | Int_t m_IdealGeoCorr[m_HTTTracks_1st_]                           *
+*Entries :        3 : Total  Size=       1042 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  115 :m_HTTTracks_1st.m_houghX : Float_t m_houghX[m_HTTTracks_1st_]      *
+*Entries :        3 : Total  Size=       1006 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  116 :m_HTTTracks_1st.m_houghY : Float_t m_houghY[m_HTTTracks_1st_]      *
+*Entries :        3 : Total  Size=       1006 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  117 :m_HTTTracks_1st.m_qoverpt : Float_t m_qoverpt[m_HTTTracks_1st_]    *
+*Entries :        3 : Total  Size=       1012 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  118 :m_HTTTracks_1st.m_d0 : Float_t m_d0[m_HTTTracks_1st_]              *
+*Entries :        3 : Total  Size=        982 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  119 :m_HTTTracks_1st.m_phi : Float_t m_phi[m_HTTTracks_1st_]            *
+*Entries :        3 : Total  Size=        988 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  120 :m_HTTTracks_1st.m_z0 : Float_t m_z0[m_HTTTracks_1st_]              *
+*Entries :        3 : Total  Size=        982 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  121 :m_HTTTracks_1st.m_eta : Float_t m_eta[m_HTTTracks_1st_]            *
+*Entries :        3 : Total  Size=        988 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  122 :m_HTTTracks_1st.m_chi2 : Float_t m_chi2[m_HTTTracks_1st_]          *
+*Entries :        3 : Total  Size=        994 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  123 :m_HTTTracks_1st.m_origchi2 : Float_t m_origchi2[m_HTTTracks_1st_]  *
+*Entries :        3 : Total  Size=       1018 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  124 :m_HTTTracks_1st.m_nmissing : UInt_t m_nmissing[m_HTTTracks_1st_]   *
+*Entries :        3 : Total  Size=       1018 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  125 :m_HTTTracks_1st.m_typemask : UInt_t m_typemask[m_HTTTracks_1st_]   *
+*Entries :        3 : Total  Size=       1018 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  126 :m_HTTTracks_1st.m_hitmap : UInt_t m_hitmap[m_HTTTracks_1st_]       *
+*Entries :        3 : Total  Size=       1006 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  127 :m_HTTTracks_1st.m_hits : vector<HTTHit> m_hits[m_HTTTracks_1st_]   *
+*Entries :        3 : Total  Size=      36014 bytes  File Size  =       2424 *
+*Baskets :        1 : Basket Size=      32000 bytes  Compression=   7.77     *
+*............................................................................*
+*Br  128 :m_HTTTracks_1st.m_eventindex :                                     *
+*         | Long_t m_eventindex[m_HTTTracks_1st_]                            *
+*Entries :        3 : Total  Size=       1142 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  129 :m_HTTTracks_1st.m_barcode : Long_t m_barcode[m_HTTTracks_1st_]     *
+*Entries :        3 : Total  Size=       1124 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  130 :m_HTTTracks_1st.m_barcode_frac :                                   *
+*         | Float_t m_barcode_frac[m_HTTTracks_1st_]                         *
+*Entries :        3 : Total  Size=       1042 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  131 :m_HTTTracks_1st.m_ORcode : UInt_t m_ORcode[m_HTTTracks_1st_]       *
+*Entries :        3 : Total  Size=       1006 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  132 :m_HTTTracks_2nd : Int_t m_HTTTracks_2nd_                           *
+*Entries :        3 : Total  Size=      47035 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  133 :m_HTTTracks_2nd.fUniqueID : UInt_t fUniqueID[m_HTTTracks_2nd_]     *
+*Entries :        3 : Total  Size=        940 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  134 :m_HTTTracks_2nd.fBits : UInt_t fBits[m_HTTTracks_2nd_]             *
+*Entries :        3 : Total  Size=        916 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  135 :m_HTTTracks_2nd.m_trackCorrType :                                  *
+*         | Int_t m_trackCorrType[m_HTTTracks_2nd_]                          *
+*Entries :        3 : Total  Size=        976 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  136 :m_HTTTracks_2nd.m_trackStage : Int_t m_trackStage[m_HTTTracks_2nd_]*
+*Entries :        3 : Total  Size=        958 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  137 :m_HTTTracks_2nd.m_doDeltaGPhis :                                   *
+*         | Bool_t m_doDeltaGPhis[m_HTTTracks_2nd_]                          *
+*Entries :        3 : Total  Size=        940 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  138 :m_HTTTracks_2nd.m_bankID : Int_t m_bankID[m_HTTTracks_2nd_]        *
+*Entries :        3 : Total  Size=        934 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  139 :m_HTTTracks_2nd.m_patternID : Int_t m_patternID[m_HTTTracks_2nd_]  *
+*Entries :        3 : Total  Size=        952 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  140 :m_HTTTracks_2nd.m_firstSectorID :                                  *
+*         | Int_t m_firstSectorID[m_HTTTracks_2nd_]                          *
+*Entries :        3 : Total  Size=        976 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  141 :m_HTTTracks_2nd.m_secondSectorID :                                 *
+*         | Int_t m_secondSectorID[m_HTTTracks_2nd_]                         *
+*Entries :        3 : Total  Size=        982 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  142 :m_HTTTracks_2nd.m_trackID : Int_t m_trackID[m_HTTTracks_2nd_]      *
+*Entries :        3 : Total  Size=        940 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  143 :m_HTTTracks_2nd.m_IdealGeoCorr :                                   *
+*         | Int_t m_IdealGeoCorr[m_HTTTracks_2nd_]                           *
+*Entries :        3 : Total  Size=        970 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  144 :m_HTTTracks_2nd.m_houghX : Float_t m_houghX[m_HTTTracks_2nd_]      *
+*Entries :        3 : Total  Size=        934 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  145 :m_HTTTracks_2nd.m_houghY : Float_t m_houghY[m_HTTTracks_2nd_]      *
+*Entries :        3 : Total  Size=        934 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  146 :m_HTTTracks_2nd.m_qoverpt : Float_t m_qoverpt[m_HTTTracks_2nd_]    *
+*Entries :        3 : Total  Size=        940 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  147 :m_HTTTracks_2nd.m_d0 : Float_t m_d0[m_HTTTracks_2nd_]              *
+*Entries :        3 : Total  Size=        910 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  148 :m_HTTTracks_2nd.m_phi : Float_t m_phi[m_HTTTracks_2nd_]            *
+*Entries :        3 : Total  Size=        916 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  149 :m_HTTTracks_2nd.m_z0 : Float_t m_z0[m_HTTTracks_2nd_]              *
+*Entries :        3 : Total  Size=        910 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  150 :m_HTTTracks_2nd.m_eta : Float_t m_eta[m_HTTTracks_2nd_]            *
+*Entries :        3 : Total  Size=        916 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  151 :m_HTTTracks_2nd.m_chi2 : Float_t m_chi2[m_HTTTracks_2nd_]          *
+*Entries :        3 : Total  Size=        922 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  152 :m_HTTTracks_2nd.m_origchi2 : Float_t m_origchi2[m_HTTTracks_2nd_]  *
+*Entries :        3 : Total  Size=        946 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  153 :m_HTTTracks_2nd.m_nmissing : UInt_t m_nmissing[m_HTTTracks_2nd_]   *
+*Entries :        3 : Total  Size=        946 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  154 :m_HTTTracks_2nd.m_typemask : UInt_t m_typemask[m_HTTTracks_2nd_]   *
+*Entries :        3 : Total  Size=        946 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  155 :m_HTTTracks_2nd.m_hitmap : UInt_t m_hitmap[m_HTTTracks_2nd_]       *
+*Entries :        3 : Total  Size=        934 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  156 :m_HTTTracks_2nd.m_hits : vector<HTTHit> m_hits[m_HTTTracks_2nd_]   *
+*Entries :        3 : Total  Size=      21506 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  157 :m_HTTTracks_2nd.m_eventindex :                                     *
+*         | Long_t m_eventindex[m_HTTTracks_2nd_]                            *
+*Entries :        3 : Total  Size=        998 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  158 :m_HTTTracks_2nd.m_barcode : Long_t m_barcode[m_HTTTracks_2nd_]     *
+*Entries :        3 : Total  Size=        980 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  159 :m_HTTTracks_2nd.m_barcode_frac :                                   *
+*         | Float_t m_barcode_frac[m_HTTTracks_2nd_]                         *
+*Entries :        3 : Total  Size=        970 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  160 :m_HTTTracks_2nd.m_ORcode : UInt_t m_ORcode[m_HTTTracks_2nd_]       *
+*Entries :        3 : Total  Size=        934 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  161 :m_dataflowInfo :                                                   *
+*Entries :        3 : Total  Size=      27521 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  162 :m_dataflowInfo.nMappedHits_1st_layer : vector<unsigned long>       *
+*Entries :        3 : Total  Size=       1092 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  163 :m_dataflowInfo.nMappedHits_1st_total : ULong_t                     *
+*Entries :        3 : Total  Size=        878 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  164 :m_dataflowInfo.nClusters_1st_layer : vector<unsigned long>         *
+*Entries :        3 : Total  Size=       1080 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  165 :m_dataflowInfo.nClusters_1st_total : ULong_t                       *
+*Entries :        3 : Total  Size=        866 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  166 :m_dataflowInfo.nRoads_1st_total : ULong_t                          *
+*Entries :        3 : Total  Size=        848 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  167 :m_dataflowInfo.nRoads_1st_7hits : ULong_t                          *
+*Entries :        3 : Total  Size=        848 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  168 :m_dataflowInfo.nRoads_1st_8hits : ULong_t                          *
+*Entries :        3 : Total  Size=        848 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  169 :m_dataflowInfo.nTracks_1st_total : ULong_t                         *
+*Entries :        3 : Total  Size=        854 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  170 :m_dataflowInfo.nTracks_1st_passChi2 : ULong_t                      *
+*Entries :        3 : Total  Size=        872 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  171 :m_dataflowInfo.nTracks_1st_afterOR : ULong_t                       *
+*Entries :        3 : Total  Size=        866 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  172 :m_dataflowInfo.nTracks_1st_per_patt_total : vector<unsigned long>  *
+*Entries :        3 : Total  Size=       1154 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  173 :m_dataflowInfo.nTracks_1st_per_patt_passChi2 :                     *
+*         | vector<unsigned long>                                            *
+*Entries :        3 : Total  Size=       1172 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  174 :m_dataflowInfo.nTracks_1st_per_patt_afterOR : vector<unsigned long>*
+*Entries :        3 : Total  Size=        966 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  175 :m_dataflowInfo.nConstants_1st_fitter : ULong_t                     *
+*Entries :        3 : Total  Size=        878 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  176 :m_dataflowInfo.nConstants_1st_passChi2 : ULong_t                   *
+*Entries :        3 : Total  Size=        890 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  177 :m_dataflowInfo.nConstants_1st_afterOR : ULong_t                    *
+*Entries :        3 : Total  Size=        884 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  178 :m_dataflowInfo.nRoads_2nd_total : ULong_t                          *
+*Entries :        3 : Total  Size=        848 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  179 :m_dataflowInfo.nTracks_2nd_total : ULong_t                         *
+*Entries :        3 : Total  Size=        854 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  180 :m_dataflowInfo.nTracks_2nd_passChi2 : ULong_t                      *
+*Entries :        3 : Total  Size=        872 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  181 :m_dataflowInfo.nTracks_2nd_afterOR : ULong_t                       *
+*Entries :        3 : Total  Size=        866 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  182 :m_dataflowInfo.nConstants_2nd_extrapolate : ULong_t                *
+*Entries :        3 : Total  Size=        908 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  183 :m_dataflowInfo.nConstants_2nd_fitter : ULong_t                     *
+*Entries :        3 : Total  Size=        878 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  184 :m_dataflowInfo.nConstants_2nd_passChi2 : ULong_t                   *
+*Entries :        3 : Total  Size=        890 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  185 :m_dataflowInfo.nConstants_2nd_afterOR : ULong_t                    *
+*Entries :        3 : Total  Size=        884 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  186 :m_dataflowInfo.nTruthTracks : ULong_t                              *
+*Entries :        3 : Total  Size=        824 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  187 :m_dataflowInfo.nOfflineTracks : ULong_t                            *
+*Entries :        3 : Total  Size=        836 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  188 :m_dataflowInfo.nTracks_1st_over_nOfflineTracks : Float_t           *
+*Entries :        3 : Total  Size=        926 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+*Br  189 :m_dataflowInfo.nTracks_2nd_over_nOfflineTracks : Float_t           *
+*Entries :        3 : Total  Size=        926 bytes  One basket in memory    *
+*Baskets :        0 : Basket Size=      32000 bytes  Compression=   1.00     *
+*............................................................................*
+[38;5;153mToolSvc.HTTWriteOutput           INFO Contains 3 entries, over 3 events run[m
+[38;5;153mToolSvc.HTTReadInput             INFO finalize: closing files[m
+[38;5;133mToolSvc.HTTWriteOutput          DEBUG Calling destructor[m
+[38;5;133mToolSvc.HTTReadInput            DEBUG Calling destructor[m
+[38;5;153m*****Chrono*****                 INFO ****************************************************************************************************[m
+[38;5;153m*****Chrono*****                 INFO  The Final CPU consumption ( Chrono ) Table (ordered)[m
+[38;5;153m*****Chrono*****                 INFO ****************************************************************************************************[m
+[38;5;153m*****Chrono*****                 INFO ****************************************************************************************************[m
+[38;5;153mChronoStatSvc.finalize()         INFO  Service finalized successfully [m
+Py:Athena            INFO leaving with code 0: "successful run"

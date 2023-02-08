@@ -1,0 +1,5 @@
+ToolSvc.HTTIndexPattTool_Reader.bank_path = "root://eosuser.cern.ch//eos/atlas/atlascerngroupdisk/det-htt/HTTsim/ATLAS-P2-ITK-17-06-00/21.9.2/eta0103phi0305/PatternBanks/test/index.HTTSimExample.10M.noWC.root";
+
+ToolSvc.HTTIndexPattTool_ReaderLegacy.bank_path = "root://eosuser.cern.ch//eos/atlas/atlascerngroupdisk/det-htt/HTTHTTsim/ATLAS-P2-ITK-17-06-00/21.9.2/eta0103phi0305/PatternBanks/test/index.HTTSimExample.10M.noWC.legacy.root";
+
+ToolSvc.HTTIndexPattTool_Writer.bank_path = "temp.HTTIndexPattIO_TestWrite.root";

@@ -1,0 +1,22 @@
+To make wrapper files:
+
+For ATLAS-P2-ITK-23-00-01, 21.9.15:
+
+```sh
+Reco_tf.py \
+    --jobNumber 242000 \
+    --inputRDOFile  /eos/atlas/atlascerngroupdisk/det-htt/HTTsim/ATLAS-P2-ITK-23-00-01/21.9.15/eta0103phi0305/RDOs/single_muons.RDO.root \
+    --maxEvents 1000 \
+    --outputAODFile OUT.AOD.pool.root \
+    --outputESDFile OUT.ESD.pool.root \
+    --geometryVersion ATLAS-P2-ITK-23-00-02 \
+    --conditionsTag OFLCOND-MC15c-SDR-14-05 \
+    --DataRunNumber 242000 \
+    --imf all:'False' \
+    --digiSteeringConf StandardInTimeOnlyTruth \
+    --ignoreErrors True \
+    --postInclude all:'InDetSLHC_Example/postInclude.SLHC_Setup_ITK.py'  RAWtoESD:'InDetSLHC_Example/postInclude.AnalogueClustering.py' \
+    --preExec 'all:from AthenaCommon.GlobalFlags import globalflags; globalflags.DataSource.set_Value_and_Lock("geant4");' RAWtoESD:'rec.UserAlgs=["TrigHTTInput/HTTSGToRawHitsWrapperAlg_jobOptions.py"];' \
+    --preInclude all:'InDetSLHC_Example/preInclude.SiliconOnly.py,InDetSLHC_Example/preInclude.SLHC_Setup.py,InDetSLHC_Example/preInclude.SLHC_Setup_Strip_GMX.py,InDetSLHC_Example/preInclude.SLHC_Calorimeter_mu0.py' 'HITtoRDO:InDetSLHC_Example/preInclude.SLHC.py' 'default:InDetSLHC_Example/preInclude.SLHC.SiliconOnly.Reco.py,InDetSLHC_Example/SLHC_Setup_Reco_TrackingGeometry_GMX.py' \
+    --postExec all:'ServiceMgr.PixelLorentzAngleSvc.ITkL03D = True'
+```

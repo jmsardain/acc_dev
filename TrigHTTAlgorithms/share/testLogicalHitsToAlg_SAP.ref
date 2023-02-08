@@ -1,0 +1,504 @@
+Running on region 0 with 5 events
+Py:Athena            INFO including file "AthenaCommon/Preparation.py"
+Py:Athena            INFO including file "AthenaCommon/Bootstrap.py"
+Py:Athena            INFO including file "AthenaCommon/Atlas.UnixStandardJob.py"
+Py:Athena            INFO executing ROOT6Setup
+Py:Athena            INFO including file "AthenaCommon/Execution.py"
+Py:Athena            INFO including file "runargs.HTTLogicalHitsToAlg.py"
+Py:Athena            INFO including file "TrigHTTAlgorithms/skeleton.HTTLogicalHitsToAlg.py"
+('Final pars: ', {'secondStage': False, 'region': '0', 'sampleType': 'singleMuons', 'bankTag': 'EF_TaskForce_dev22', 'withPU': False, 'sectorsAsPatterns': True})
+Py:Athena            INFO including file "AthenaCommon/runbatch.py"
+ApplicationMgr       INFO Application Manager Configured successfully
+Py:Athena            INFO including file "AthenaCommon/Preparation.py"
+Py:Athena            INFO including file "AthenaCommon/Bootstrap.py"
+Py:Athena            INFO including file "AthenaCommon/Atlas.UnixStandardJob.py"
+Py:Athena            INFO executing ROOT6Setup
+Py:Athena            INFO including file "AthenaCommon/Execution.py"
+ApplicationMgr       INFO Application Manager Configured successfully
+Py:Athena            INFO including file "AthenaCommon/runbatch.py"
+[38;5;153mStatusCodeSvc                    INFO initialize[m
+[38;5;153mAthDictLoaderSvc                 INFO in initialize...[m
+[38;5;153mAthDictLoaderSvc                 INFO acquired Dso-registry[m
+[38;5;153mChronoStatSvc                    INFO  Number of skipped events for MemStat-1[m
+[38;5;153mCoreDumpSvc                      INFO install f-a-t-a-l handler... (flag = -1)[m
+[38;5;153mCoreDumpSvc                      INFO Handling signals: 11(Segmentation fault) 7(Bus error) 4(Illegal instruction) 8(Floating point exception) [m
+[38;5;153mAthMasterSeq                     INFO Member list: AthSequencer/AthAlgSeq, AthSequencer/AthOutSeq, AthSequencer/AthRegSeq[m
+[38;5;153mAthAlgSeq                        INFO Member list: HTTLogicalHitsProcessAlg[m
+[38;5;153mHTTLogicalHitsProcessAlg         INFO Tag config:[m
+[38;5;153mHTTLogicalHitsProcessAlg         INFO 	map: EF_TaskForce_dev22[m
+[38;5;153mHTTLogicalHitsProcessAlg         INFO 	bank: EF_TaskForce_dev22[m
+[38;5;153mHTTLogicalHitsProcessAlg         INFO 	algo: dev_21-02-15[m
+[38;5;153mHTTLogicalHitsProcessAlg         INFO 	sectorsAsPatterns: True (default: False)[m
+[38;5;153mToolSvc.HTTReadInput             INFO HTTInputHeaderTool::initialize()[m
+[38;5;153mToolSvc.HTTReadInput             INFO Getting branch and set EventHeader[m
+[38;5;153mToolSvc.HTTReadInput             INFO End of Tool initialize[m
+[38;5;153mHTTEventSelectionSvc             INFO Creating the slices object[m
+[38;5;153mHTTEventSelectionSvc             INFO HTTEventSelectionSvc::initialize(): regionID = 0, min = {phi:0.3 q/pt:-0.001 d0:-2 z0:-150 eta:0.1}, max = {phi:0.5 q/pt:0.001 d0:2 z0:150 eta:0.3}, sampleType = singleMuons, withPU = 0[m
+[38;5;153mHTTPlaneMap_1st                  INFO Using 8 logical layers and 9 coordinates[m
+[38;5;153mHTTPlaneMap_2nd                  INFO Using 13 logical layers and 18 coordinates[m
+[38;5;153mToolSvc.HTT_RawToLogicalHit...   INFO SaveOptional= 'SaveOptional':2[m
+[38;5;153mToolSvc.HTTClusteringTool        INFO HTTClusteringTool::initialize()[m
+[38;5;153mHTTFitConstantBank_1st           INFO Settings: m_ncoords=9 m_npars=5[m
+[38;5;153mToolSvc.HTTOverlapRemovalTo...   INFO HTTOverlapRemovalTool::initialize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool      INFO HTTMonitorUnionTool::initialize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTHitMonitorTool::initialize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTClusterMonitorTool::initialize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTRoadMonitorTool::initialize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTTrackMonitorTool::initialize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTEventMonitorTool::initialize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool      INFO Running with 6 monitor tool(s).[m
+[38;5;153mToolSvc.HTTDataFlowTool          INFO HTTDataFlowTool::initialize()[m
+[38;5;153mToolSvc.HTTWriteOutput           INFO HTTOutputHeaderTool::initialize()[m
+[38;5;153mToolSvc.HTTWriteOutput           INFO Creating empty branches in output file[m
+[38;5;153mToolSvc.HTTWriteOutput           INFO End of Tool initialize[m
+[93mHistogramPersistencySvc       WARNING Histograms saving not required.[m
+[38;5;153mApplicationMgr                   INFO Application Manager Initialized successfully[m
+[38;5;153mApplicationMgr                   INFO Application Manager Started successfully[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start of run 1    <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #1, run #1 0 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 0[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #1, run #1 1 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #2, run #1 1 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 1[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #2, run #1 2 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #3, run #1 2 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 2[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #3, run #1 3 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #4, run #1 3 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 3[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #4, run #1 4 events processed so far  <<<===[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  start processing event #5, run #1 4 events processed so far  <<<===[m
+[38;5;153mToolSvc.HTTReadInput             INFO 4[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[93mToolSvc.HTTMonitorUnionTool...WARNING Found first stage road with 5 and 2 WCs[m
+[38;5;153mAthenaEventLoopMgr               INFO   ===>>>  done processing event #5, run #1 5 events processed so far  <<<===[m
+[38;5;153mApplicationMgr                   INFO Application Manager Stopped successfully[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO -----------------------------------------------------------------------[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO Summary Statistics:[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	Events with first stage roads=4/4, miss=0%[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	First stage road matched to truth eff=4/4, miss=0%[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 		[1-2 GeV]=100% [2-4 Gev]=100% [4+ GeV]=-nan%[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	First stage road Ave=250, exclude zero=250[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	First stage road hit combinations Ave=1736.25, exclude zero=1736.25[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO  [m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	First Stage Tracks Final Ave=16.75, Events=4/4(100%)[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	First stage track matched to truth: all=4, passChi2=4, final=4/4, miss=0%[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO 	wrt offline=4/4(100%)[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO -----------------------------------------------------------------------[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO  [m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO ----------------------------------FIRST STAGE HITS----------------------------------[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of first stage hits / event: Entries=4, Mean=12.5, RMS=4.15331, RMS95=4.15331[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of first stage hit layers / event: Entries=4, Mean=8, RMS=0, RMS95=0[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO ---------------------------------FIRST STAGE ROADS----------------------------------[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of first stage roads found per event: Entries=4, Mean=250, RMS=73.3451, RMS95=73.3451[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of first stage roads with unique hits found per event: Entries=4, Mean=91.5, RMS=26.8747, RMS95=26.8747[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of first stage roads per matched truth track: Entries=4, Mean=250, RMS=73.3451, RMS95=73.3451[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO total number of first stage hit combinations per event: Entries=4, Mean=1736.25, RMS=1563.35, RMS95=1563.35[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of hits per first stage road: Entries=1000, Mean=8.881, RMS=3.19888, RMS95=3.39148[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of layers hit per first stage road: Entries=1000, Mean=5.806, RMS=0.719975, RMS95=0.761594[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO layer ids with hits, per first stage road: Entries=5806, Mean=3.58543, RMS=2.17148, RMS95=2.17148[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO -------------------------------FIRST STAGE HTT TRACKS-------------------------------[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of all first stage tracks found per event: Entries=4, Mean=1736.25, RMS=1563.35, RMS95=1563.35[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of first stage tracks found per event passing Chi^2 cut: Entries=4, Mean=381.75, RMS=255.931, RMS95=255.931[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of first stage tracks found per event after overlap removal: Entries=4, Mean=16.75, RMS=26.1379, RMS95=26.1379[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO Chi^2 of all first stage tracks: Entries=6945, Mean=19102.1, RMS=28750.9, RMS95=28750.9[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO Chi^2 per ndof of all first stage tracks: Entries=6945, Mean=6274.76, RMS=9463, RMS95=9463[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO NMissing on all first stage tracks: Entries=6945, Mean=0.956659, RMS=0.623508, RMS95=0.679971[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO ------------------------------TRUTH TRACKS------------------------------[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO --------------------------------OFFLINE CLUSTERS--------------------------------[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of offline clusters found per event: Entries=4, Mean=17.25, RMS=2.38485, RMS95=2.38485[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO --------------------------------FIRST STAGE CLUSTERS--------------------------------[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO number of first stage clusters found per event: Entries=4, Mean=12.5, RMS=4.15331, RMS95=4.15331[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO layer of first stage clusters: Entries=50, Mean=3.3, RMS=2.32594, RMS95=2.32594[m
+[38;5;153mAthAlgSeq                        INFO Finalizing AthAlgSeq...[m
+[38;5;153mAthOutSeq                        INFO Finalizing AthOutSeq...[m
+[38;5;153mAthRegSeq                        INFO Finalizing AthRegSeq...[m
+[38;5;153mAthMasterSeq                     INFO Finalizing AthMasterSeq...[m
+[38;5;153mTrigHTTBankSvc                   INFO TrigHTTBankSvc::finalize()[m
+[38;5;153mHTTEventSelectionSvc             INFO HTTEventSelectionSvc::finalize()[m
+[38;5;153mAthDictLoaderSvc                 INFO in finalize...[m
+[38;5;153mToolSvc                          INFO Removing all tools created by ToolSvc[m
+[38;5;153mToolSvc.HTTWriteOutput           INFO finalize: closing files[m
+[38;5;153mToolSvc.HTTDataFlowTool          INFO HTTDataFlowTool::finalize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTEventMonitorTool::finalize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTTrackMonitorTool::finalize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTRoadMonitorTool::finalize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTClusterMonitorTool::finalize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool...   INFO HTTHitMonitorTool::finalize()[m
+[38;5;153mToolSvc.HTTMonitorUnionTool      INFO HTTMonitorUnionTool::finalize()[m
+[38;5;153mToolSvc.HTTOverlapRemovalTo...   INFO HTTOverlapRemovalTool::finalize()[m
+[38;5;153mToolSvc.HTTClusteringTool        INFO HTTClusteringTool::finalize()[m
+[38;5;153mToolSvc.HTT_RawToLogicalHit...   INFO HTT_RawToLogicalHitsTool::finalized()[m
+[38;5;153mToolSvc.HTTReadInput             INFO finalize: closing files[m
+[38;5;153m*****Chrono*****                 INFO ****************************************************************************************************[m
+[38;5;153m*****Chrono*****                 INFO  The Final CPU consumption ( Chrono ) Table (ordered)[m
+[38;5;153m*****Chrono*****                 INFO ****************************************************************************************************[m
+[38;5;153m*****Chrono*****                 INFO ****************************************************************************************************[m
+[38;5;153mChronoStatSvc.finalize()         INFO  Service finalized successfully [m
+[38;5;153mApplicationMgr                   INFO Application Manager Finalized successfully[m
+[38;5;153mApplicationMgr                   INFO Application Manager Terminated successfully[m
+Py:Athena            INFO leaving with code 0: "successful run"
