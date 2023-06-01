@@ -43,7 +43,7 @@ int main(int argc,char *argv[]){
 
   // unsigned int size_vec = datavec.size();
   // double data_arr[size_vec];
-  // ConvertVecToArr(datavec, data_arr);
+  ConvertVecToArr(datavec, data_arr);
   // print_info_array_data(data_arr, size_vec);
 
 
