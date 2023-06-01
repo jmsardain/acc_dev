@@ -41,10 +41,10 @@ int main(int argc,char *argv[]){
   print_info_vec_data(datavec, NEVENTS); // you could do this just to check
   int nlines = 8884; // nlines is different than nevents, each event can have 8+ hits
 
-  // unsigned int size_vec = datavec.size();
+  unsigned int size_vec = datavec.size();
   double data_arr[size_vec];
   ConvertVecToArr(datavec, data_arr);
-  // print_info_array_data(data_arr, size_vec);
+  print_info_array_data(data_arr, size_vec);
 
 
   //SelectEvent(data_arr, nlines);
